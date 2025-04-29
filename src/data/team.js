@@ -1,5 +1,6 @@
 import khadijah  from "../assets/images/khadijah.jpg";
 import mouha from "../assets/images/mouha.jpg";
+import lamine from "../assets/images/lamine.jpg";
 export const teamMembers = [{
         id: 1,
         name: "Khadidiatou DIOME",
@@ -26,7 +27,7 @@ export const teamMembers = [{
     {
         id: 2,
         name: "Mouhamadou Diouf CISSE",
-        role: "Software Engineer",
+        role: "Elève Ingénieur en Informatique et Télécommunications",
         image: mouha,
         email: "mouhamadou.cisse@ept.sn",
         linkedin: "https://www.linkedin.com/in/mouhamadou-diouf-ciss%C3%A9-9303a12aa",
@@ -70,28 +71,43 @@ export const teamMembers = [{
         }]
     },
     {
-        id: 4,
-        name: "Mouhamadou Lamine NDIAYE",
-        role: "Software Engineer",
-        image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
-        email: "mouhamadou.ndiaye@ept.sn",
-        linkedin: "https://linkedin.com/in/mouhamadou-ndiaye",
-        github: "https://github.com/mouhamadou-ndiaye",
-        bio: "Aspiring software engineer with expertise in telecommunications and networking.",
-        skills: ["JavaScript", "React", "Network Design", "Cloud Services", "Agile Methodologies"],
-        experience: [{
-            role: "Technical Intern",
-            company: "Sonatel",
-            period: "June 2023 - August 2023",
-            description: "Participated in network infrastructure projects and software development."
-        }],
-        education: [{
-            degree: "Engineering Degree in Computer Science and Telecommunications",
-            school: "École Polytechnique de Thiès",
-            period: "2021 - Present",
-            description: "Focus on software engineering and network technologies."
-        }]
+        "id": 4,
+        "name": "Mouhamadou Lamine NDIAYE",
+        "role": "Élève Ingénieur en Informatique et Télécommunications",
+        "image": "lamine",
+        "email": "nidayeml@ept.sn",
+        "linkedin": "www.linkedin.com/in/mouhamadou-lamine-ndiaye",
+        "github": "https://github.com/mlndiaye",
+        "bio": "Passionné par la cybersécurité et le développement web, je m'intéresse également aux technologies modernes du cloud, aux systèmes embarqués et à l'intelligence artificielle. Je conçois des solutions robustes et sécurisées, orientées vers l'impact et l'innovation.",
+        "skills": [
+            "Cybersécurité",
+            "Développement Web (Spring Boot, Django, Angular, React)",
+            "DevOps (Docker, Kubernetes, CI/CD)",
+            "Cloud Computing (AWS, Azure, ... )",
+            "Gestion de projet (Agile, Scrum)",
+            "Bases de données (MySQL, PostgreSQL, MongoDB)",
+            "Réseaux & Protocoles",
+            "Systèmes Embarqués (ESP32, Arduino)",
+            "Intelligence Artificielle & Machine Learning"
+        ],
+        "experience": [
+            {
+                "role": "Stagiaire",
+                "company": "Sonatel",
+                "period": "Août 2024 - Décembre 2024",
+                "description": "Développement Full Stack au sein de la DSI/SPA : conception et mise en œuvre de solutions web sécurisées en utilisant Spring Boot pour le backend et Angular pour le frontend."
+            }
+        ],
+        "education": [
+            {
+                "degree": "DIC2 (2e année de spécialisation)",
+                "school": "École Polytechnique de Thiès",
+                "period": "2021 - Present",
+                "description": "Formation généraliste en Informatique et Télécommunications avec une spécialisation en cybersécurité, développement logiciel et systèmes distribués."
+            }
+        ]
     },
+    
     {
         id: 5,
         name: "Moussa SEYE",
