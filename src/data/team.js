@@ -1,4 +1,5 @@
-import khadijah from "../assets/images/khadijah.jpeg";
+import khadijah  from "../assets/images/khadijah.jpg";
+import mouha from "../assets/images/mouha.jpg";
 export const teamMembers = [{
         id: 1,
         name: "Khadidiatou DIOME",
@@ -26,38 +27,24 @@ export const teamMembers = [{
         id: 2,
         name: "Mouhamadou Diouf CISSE",
         role: "Software Engineer",
-        image: "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg",
+        image: mouha,
         email: "mouhamadou.cisse@ept.sn",
-        linkedin: "https://linkedin.com/in/mouhamadou-cisse",
-        github: "https://github.com/mouhamadou-cisse",
-        bio: "Computer Science and Telecommunications engineering student with a passion for innovative solutions.",
-        skills: ["Java", "Python", "React", "Network Security", "Cloud Computing", "Docker"],
+        linkedin: "https://www.linkedin.com/in/mouhamadou-diouf-ciss%C3%A9-9303a12aa",
+        github: "https://github.com/killer-pro",
+        bio: "Étudiant en génie informatique et télécommunications passionné par les solutions innovantes, l'IA, les algorithmes, l'IoT et les réseaux.",
+        skills: ["Java", "Python", "React", "Network Security", "Cloud Computing", "Docker" , "springboot" , "iot"],
         experience: [{
-            role: "Network Engineering Intern",
+            role: "Stagiaire",
             company: "Sonatel",
-            period: "June 2023 - August 2023",
-            description: "Worked on network infrastructure optimization and security implementations."
+            period: "Août 2024 - Décembre 2024",
+            description: "devellopeur full stack  Departement fusion team digital"
         }],
         education: [{
             degree: "Engineering Degree in Computer Science and Telecommunications",
             school: "École Polytechnique de Thiès",
             period: "2021 - Present",
-            description: "Focus on network engineering and software development."
+            description: "Se concentre sur l'ingénierie réseau et le développement de logiciels, l'IOT et le cloud. passionné par tout ce qui concerne les algorithmes et les solutions innovantes."
         }],
-        projects: [
-            "Application e-commerce complète - Développement d'une application e-commerce couvrant l'ensemble du processus, de l'achat à la livraison, incluant : gestion des stocks, panier, paiement sécurisé, et suivi des commandes en temps réel.",
-            "Plateforme de recommandation d'ordinateurs (ML) - Création d'une application de traitement de données et de machine learning basée sur une base de données d'ordinateurs, permettant de recommander automatiquement la machine la plus adaptée et la moins chère selon les critères définis par l'utilisateur (performance, prix, usage, etc.).",
-            "Optimisation d'emploi du temps avec algorithmes de graphes - Développement d'un système d'optimisation d'emplois du temps prenant en compte toutes les contraintes utilisateurs (plages horaires, caracteristique technique precis, ressources disponibles, priorités) à l'aide d'algorithmes de graphes et de techniques d'ordonnancement.",
-            "Reproduction d'un environnement Jupyter Notebook en HTML - Création d'une application web qui simule l'environnement Jupyter Notebook, en interprétant du HTML pour afficher et exécuter dynamiquement du code dans une interface interactive.",
-            "Système IoT de surveillance de séchoirs solaires - Développement d'un dispositif de surveillance et de contrôle à distance d'un réseau de séchoirs solaires, basé sur l'IoT et le cloud. Ce système recueille les données des capteurs (température, humidité, etc.) pour permettre un monitoring en temps réel et optimiser les performances énergétiques.",
-            "Mini-jeux JavaScript - Programmation de plusieurs jeux classiques en JavaScript, notamment : Démineur, Dames, 2048 et Tic-Tac-Toe, en mettant l'accent sur l'interactivité, les animations et l'algorithmique.",
-            "Plateforme de soumission et de vulgarisation de projets - Développement d'une application web permettant aux porteurs de projets de publier, vulgariser et partager leurs idées à l'échelle nationale afin d'accroître leur visibilité, attirer des financements et susciter des collaborations.",
-            "Détection de sentiments sur les réseaux sociaux (NLP + ML) - Création d'une application de détection et de profilage des sentiments exprimés dans les commentaires des réseaux sociaux à l'aide de techniques de traitement du langage naturel (NLP) et de machine learning supervisé.",
-            "Application de transcodage numérique entre bases - Développement d'un outil de conversion efficace entre différentes bases numériques (ex. : base 10 à base 2, base 16 à base 8, etc.), incluant une interface simple et des explications pédagogiques pour les utilisateurs.",
-            "Plateforme de streaming vidéo - Réalisation d'une plateforme de streaming vidéo, avec gestion des utilisateurs, encodage des vidéos, système de lecture optimisé, recommandations de contenu, et fonctionnalités communautaires (commentaires, likes, playlists).",
-            "Prévision du prix des matériaux de construction - Conception d'une application de prévision de l'évolution des prix des matières premières (béton, fer, sable, etc.) à l'aide de l'analyse de données historiques, permettant d'anticiper les achats et constituer des stocks stratégiques.",
-            "Surveillance intelligente d'un réseau de pipelines de gaz (IoT + IA) - Développement d'une plateforme IoT intelligente pour le suivi d'un réseau de pipelines de gaz : collecte, analyse et visualisation graphique des données, détection de fuites en temps réel via des algorithmes d'intelligence artificielle, et émission d'alertes immédiates."
-        ]
     },
     {
         id: 3,

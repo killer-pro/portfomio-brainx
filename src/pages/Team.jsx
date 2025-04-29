@@ -33,7 +33,7 @@ function Team() {
             >
               <div className="aspect-w-3 aspect-h-2">
                 <img
-                  className="w-full h-64 object-cover"
+                  className="w-full h-64 object-cover object-top"
                   src={member.image}
                   alt={member.name}
                 />
