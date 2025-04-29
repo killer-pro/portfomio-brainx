@@ -1,4 +1,4 @@
-import khadijah  from "../assets/images/khadijah.jpg";
+import khadijah  from "../assets/images/khadijah.jpeg";
 import mouha from "../assets/images/mouha.jpg";
 import lamine from "../assets/images/lamine.jpg";
 export const teamMembers = [{
@@ -74,11 +74,11 @@ export const teamMembers = [{
         "id": 4,
         "name": "Mouhamadou Lamine NDIAYE",
         "role": "Élève Ingénieur en Informatique et Télécommunications",
-        "image": "lamine",
+        "image": lamine,
         "email": "nidayeml@ept.sn",
         "linkedin": "www.linkedin.com/in/mouhamadou-lamine-ndiaye",
         "github": "https://github.com/mlndiaye",
-        "bio": "Passionné par la cybersécurité et le développement web, je m'intéresse également aux technologies modernes du cloud, aux systèmes embarqués et à l'intelligence artificielle. Je conçois des solutions robustes et sécurisées, orientées vers l'impact et l'innovation.",
+        "bio": "Passionné par la cybersécurité et le développement web, s'intéresse également aux technologies modernes du cloud, aux systèmes embarqués et à l'intelligence artificielle.",
         "skills": [
             "Cybersécurité",
             "Développement Web (Spring Boot, Django, Angular, React)",
