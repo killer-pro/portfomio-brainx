@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -73,7 +74,7 @@ function Team() {
                   to={`/portfolio/${member.id}`}
                   className="w-full inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 transition-colors duration-200 shadow-md hover:shadow-lg"
                 >
-                  View Portfolio
+                  Voir biographie complète
                 </Link>
               </div>
             </motion.div>
