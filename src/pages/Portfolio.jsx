@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -70,6 +71,17 @@ function Portfolio() {
               </div>
             </div>
           </div>
+
+          {member.biography && (
+            <div className="p-8 border-t border-gray-200 bg-gradient-to-r from-indigo-50 to-gray-50">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Ma Motivation et Mon Parcours</h2>
+              <div className="prose prose-indigo max-w-none">
+                {member.biography.map((paragraph, idx) => (
+                  <p key={idx} className="mb-4 text-gray-800 leading-relaxed">{paragraph}</p>
+                ))}
+              </div>
+            </div>
+          )}
 
           <div className="p-8 border-t border-gray-200">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Skills</h2>

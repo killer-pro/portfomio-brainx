@@ -13,7 +13,7 @@ function Home() {
           className="text-center"
         >
           <h1 className="text-5xl font-extrabold text-gray-900 sm:text-6xl md:text-7xl mb-8">
-            Welcome to <span className="text-indigo-600 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600">BrainX</span>
+            Welcome to <span className="text-indigo-600 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600">MetalX</span>
           </h1>
           <p className="mt-3 max-w-md mx-auto text-xl text-gray-600 sm:text-2xl md:mt-5 md:max-w-3xl">
             A team of innovative engineers from École Polytechnique de Thiès, specializing in computer science and telecommunications.
