@@ -9,7 +9,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <Link to="/" className="text-2xl font-bold text-indigo-600">
-              BrainX
+              MetalX
             </Link>
             <p className="mt-4 text-gray-500">
               Innovative solutions by EPT engineers
