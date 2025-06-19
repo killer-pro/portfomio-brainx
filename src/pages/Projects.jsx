@@ -14,10 +14,10 @@ function Projects() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Our Projects
+            Nos Projets
           </h2>
           <p className="mt-4 text-lg text-gray-500">
-            Innovative solutions developed during hackathons, internships, and academic projects
+            Solutions innovantes développées lors de hackathons, stages et projets académiques
           </p>
         </motion.div>
 
@@ -43,7 +43,7 @@ function Projects() {
                 </h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>
                 <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-700 mb-2">Technologies:</h4>
+                  <h4 className="text-sm font-semibold text-gray-700 mb-2">Technologies :</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, index) => (
                       <span
@@ -63,7 +63,7 @@ function Projects() {
                     className="flex items-center text-indigo-600 hover:text-indigo-800"
                   >
                     <FaExternalLinkAlt className="mr-2" />
-                    Live Demo
+                    Démo en ligne
                   </a>
                   <a
                     href={project.githubUrl}
@@ -72,7 +72,7 @@ function Projects() {
                     className="flex items-center text-gray-600 hover:text-gray-800"
                   >
                     <FaGithub className="mr-2" />
-                    Source Code
+                    Code source
                   </a>
                 </div>
               </div>

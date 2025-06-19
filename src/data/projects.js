@@ -1,18 +1,15 @@
+
 import brainx from "../assets/images/brainx.jpeg";
 import senproject from "../assets/images/senproject.png";
 import bhybride from "../assets/images/bhybride.png";
 import medical from "../assets/images/medical.jpg";
 import compression_audio from "../assets/images/compression_audio.jpg";
 import sommeil from "../assets/images/sommeil.jpg";
-export const projects = [{
-        id: 1,
-        title: "Application e-commerce complète",
-        description: "Développement d'une application e-commerce couvrant l'ensemble du processus, de l'achat à la livraison, incluant : gestion des stocks, panier, paiement sécurisé, et suivi des commandes en temps réel.",
-        image: "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/259622089/original/20f7f0b51335b8f8ea8a278e55d2d6ca50d53a1e/build-e-commerce-application.jpg",
-        technologies: ["React", "Node.js", "MongoDB", "Stripe", "Redux"],
-        demoUrl: "#",
-        githubUrl: "#"
-    },
+import echo_code from "../assets/images/echo code.png";
+import internsense from "../assets/images/internsense.jpg";
+import dreamforge from "../assets/images/dreamforge.png";
+
+export const projects = [
     {
         id: 2,
         title: "Surveillance intelligente de pipelines de gaz de la petrosen",
@@ -22,9 +19,35 @@ export const projects = [{
         demoUrl: "#",
         githubUrl: "#"
     },
-
     {
         id: 3,
+        title: "InternSense - Plateforme IA de gestion de stages",
+        description: "Système révolutionnaire de gestion de stages alimenté par l'IA avec analyse automatique des candidatures, interface conversationnelle et accompagnement personnalisé pour candidats et RH.",
+        image: internsense ,
+        technologies: ["Angular", "Spring Boot", "MySQL", "Salesforce Agentforce", "JWT", "OAuth 2.0"],
+        demoUrl: "https://www.youtube.com/watch?v=dBGEsJzx9iQ",
+        githubUrl: "#"
+    },
+    {
+        id: 4,
+        title: "Echo Code Detective - Jeu d'enquête procédural IA",
+        description: "Jeu de détective mystère où chaque enquête est générée dynamiquement par l'IA. Explorez un monde 2D, interrogez des PNJ avec des personnalités uniques et résolvez des mystères infinis.",
+        image: echo_code,
+        technologies: ["React", "TypeScript", "Konva", "Google Gemini", "Pollination.ai", "Supabase"],
+        demoUrl: "https://echo-code-detective.netlify.app",
+        githubUrl: "https://github.com/killer-pro/echo-code-detective-quest"
+    },
+    {
+        id: 5,
+        title: "DreamForge - Interpréteur de rêves IA",
+        description: "Application d'interprétation de rêves alimentée par l'IA utilisant l'API Sonar de Perplexity. Analyse les symboles, émotions et thèmes des rêves avec contexte culturel et génération d'images immersives.",
+        image: dreamforge,
+        technologies: ["React", "TypeScript", "Vite", "Sonar API", "Perplexity AI", "Tailwind CSS"],
+        demoUrl: "https://dream-uwg8.onrender.com",
+        githubUrl: "#"
+    },
+    {
+        id: 6,
         title: "Optimisation d'emploi du temps",
         description: "Développement d'un système d'optimisation d'emplois du temps prenant en compte toutes les contraintes utilisateurs à l'aide d'algorithmes de graphes et de techniques d'ordonnancement.",
         image: "https://emjpv36xdx4.exactdn.com/wp-content/uploads/2024/10/Emploi-du-temps-detude.jpg?strip=all&lossy=1&quality=83&sharp=1&ssl=1",
@@ -33,7 +56,7 @@ export const projects = [{
         githubUrl: "#"
     },
     {
-        id: 4,
+        id: 7,
         title: "Environnement Jupyter Notebook en HTML",
         description: "Création d'une application web qui simule l'environnement Jupyter Notebook, en interprétant du HTML pour afficher et exécuter dynamiquement du code dans une interface interactive.",
         image: "https://www.esrf.fr/files/live/sites/www/files/UsersAndScience/Experiments/CRG/BM02/fromProfileChahine/data_analysis/Jupyter.PNG",
@@ -42,7 +65,7 @@ export const projects = [{
         githubUrl: "#"
     },
     {
-        id: 5,
+        id: 8,
         title: "Système IoT de surveillance de séchoirs solaires",
         description: "Développement d'un dispositif de surveillance et de contrôle à distance d'un réseau de séchoirs solaires, basé sur l'IoT et le cloud.",
         image: "https://www.shieldenchannel.com/cdn/shop/articles/solar-monitoring-systems-from-how-they-work-to-buying-guide-989992.jpg?v=1737592676&width=600",
@@ -51,7 +74,7 @@ export const projects = [{
         githubUrl: "#"
     },
     {
-        id: 6,
+        id: 9,
         title: "Mini-jeux JavaScript",
         description: "Programmation de plusieurs jeux classiques en JavaScript, notamment : Démineur, Dames, 2048 et Tic-Tac-Toe, en mettant l'accent sur l'interactivité, les animations et l'algorithmique.",
         image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*QXUdmpRnVlfEn2ZuEfoiEw.png",
@@ -60,7 +83,7 @@ export const projects = [{
         githubUrl: "#"
     },
     {
-        id: 7,
+        id: 10,
         title: "Plateforme de soumission de projets",
         description: "Développement d'une application web permettant aux porteurs de projets de publier, vulgariser et partager leurs idées à l'échelle nationale.",
         image: senproject ,
@@ -69,7 +92,7 @@ export const projects = [{
         githubUrl: "#"
     },
     {
-        id: 8,
+        id: 11,
         title: "Détection de sentiments sur les réseaux sociaux",
         description: "Création d'une application de détection et de profilage des sentiments exprimés dans les commentaires des réseaux sociaux à l'aide de techniques de NLP et ML.",
         image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
@@ -78,7 +101,7 @@ export const projects = [{
         githubUrl: "#"
     },
     {
-        id: 9,
+        id: 12,
         title: "Application de transcodage numérique",
         description: "Développement d'un outil de conversion efficace entre différentes bases numériques, incluant une interface simple et des explications pédagogiques.",
         image: "https://images.pexels.com/photos/4709285/pexels-photo-4709285.jpeg",
@@ -87,7 +110,7 @@ export const projects = [{
         githubUrl: "#"
     },
     {
-        id: 10,
+        id: 13,
         title: "Plateforme de streaming vidéo",
         description: "Réalisation d'une plateforme de streaming vidéo, avec gestion des utilisateurs, encodage des vidéos, système de lecture optimisé et fonctionnalités communautaires.",
         image: "https://images.pexels.com/photos/2510428/pexels-photo-2510428.jpeg",
@@ -96,7 +119,7 @@ export const projects = [{
         githubUrl: "#"
     },
     {
-        id: 11,
+        id: 14,
         title: "Prévision du prix des matériaux",
         description: "Conception d'une application de prévision de l'évolution des prix des matières premières à l'aide de l'analyse de données historiques.",
         image: "https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg",
@@ -105,7 +128,7 @@ export const projects = [{
         githubUrl: "#"
     },
     {
-        id: 12,
+        id: 15,
         title: "Plateforme de recommandation d'ordinateurs (ML)",
         description: "Création d'une application de traitement de données et de machine learning basée sur une base de données d'ordinateurs, permettant de recommander automatiquement la machine la plus adaptée et la moins chère selon les critères définis par l'utilisateur.",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_EhDQiNf0FTUdu8VBCgYBrcD-gr3BXeW5WQ&s",
@@ -113,52 +136,15 @@ export const projects = [{
         demoUrl: "#",
         githubUrl: "#"
     },
-
     {
-        id: 13,
+        id: 16,
         title: "Application e-commerce complète",
         description: "Développement d'une boutique en ligne pour produits électroniques couvrant l'ensemble du processus : gestion des stocks, panier, paiement sécurisé, et suivi des commandes.",
-        image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg",
+        image: "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/259622089/original/20f7f0b51335b8f8ea8a278e55d2d6ca50d53a1e/build-e-commerce-application.jpg",
         technologies: ["Django", "SQLite", "Bootstrap", "PayPal API"],
         demoUrl: "#",
         githubUrl: "#"
-    },
-    {
-        id: 14,
-        title: "Digitalisation des conflits fonciers au Sénégal",
-        description: "Conception d'un système de gestion des litiges fonciers basé sur une modélisation UML, pour améliorer la transparence, la traçabilité et l'accès à l'information.",
-        image: "https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg",
-        technologies: ["UML", "StarUML", "Django", "PostgreSQL"],
-        demoUrl: "https://www.canva.com/design/DAGDh2A6waA/sELP42v_TSkjCwRDImnBQw/edit?utm_content=DAGDh2A6waA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-        githubUrl: "#"
-    },
-    {
-        id: 15,
-        title: "Prédiction de Diabète",
-        description: "Application de techniques de machine learning pour prédire les risques de diabète à partir de données cliniques (PIMA dataset), avec visualisations et interface web.",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcxZV6nsT8wh1ajbKvd-IBIanlx0IYzuhWDA&s",
-        technologies: ["Python", "Scikit-learn", "Pandas", "Streamlit"],
-        demoUrl: "https://www.canva.com/design/DAGDCRXSdoE/07TWY-qIGxKsfPYprcYZ8Q/edit?utm_content=DAGDCRXSdoE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-        githubUrl: "#"
-    },
-    {
-        id: 16,
-        title: "Système de Parking Automatisé",
-        description: "Conception d'un système de stationnement automatique avec barrière contrôlée par capteurs à ultrasons et carte Arduino, affichage du nombre de places disponibles.",
-        image: "https://images.pexels.com/photos/248547/pexels-photo-248547.jpeg",
-        technologies: ["Arduino", "Capteurs Ultrason", "Servo-moteur", "C++"],
-        demoUrl: "https://drive.google.com/file/d/119VW-xoT9ffpK-QFaAQdh3R6MAusJkwL/view?usp=share_link",
-        githubUrl: "#"
-    },
-    {
-        id: 17,
-        title: "Système d'authentification et achats de tickets resto virtuels par QR Code",
-        description: "Développement d'un système sécurisé d'authentification  et gestion de la restauration par QR Code pour élèves, incluant une base de données centralisée et une interface de scan temps réel.",
-        image: "https://www.imprimerie-dijon.com/wp-content/uploads/2024/09/qr-code-carre-table-exterieur.png",
-        technologies: ["Django", "SQLite", "qrcode", "OpenCV", "Python"],
-        demoUrl: "https://drive.google.com/file/d/11Khfhr9XmjiaoT2rPS11mnZsCWlH-mZg/view?usp=share_link",
-        githubUrl: "#"
-    },
+    },  
     {
         id: 18,
         title: "Boutique Hybride",

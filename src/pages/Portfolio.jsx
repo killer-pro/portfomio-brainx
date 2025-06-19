@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -10,7 +9,7 @@ function Portfolio() {
   const member = teamMembers.find(m => m.id === parseInt(id));
 
   if (!member) {
-    return <div>Member not found</div>;
+    return <div>Membre non trouvé</div>;
   }
 
   return (
@@ -66,7 +65,7 @@ function Portfolio() {
                   className="flex items-center text-gray-600 hover:text-indigo-600"
                 >
                   <FaDownload className="mr-2" />
-                  Download CV
+                  Télécharger le CV
                 </a>
               </div>
             </div>
@@ -74,7 +73,7 @@ function Portfolio() {
 
           {member.biography && (
             <div className="p-8 border-t border-gray-200 bg-gradient-to-r from-indigo-50 to-gray-50">
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">Ma Motivation et Mon Parcours</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Ma motivation et mon parcours</h2>
               <div className="prose prose-indigo max-w-none">
                 {member.biography.map((paragraph, idx) => (
                   <p key={idx} className="mb-4 text-gray-800 leading-relaxed">{paragraph}</p>
@@ -84,7 +83,7 @@ function Portfolio() {
           )}
 
           <div className="p-8 border-t border-gray-200">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Skills</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Compétences</h2>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {member.skills?.map((skill, index) => (
                 <div key={index} className="bg-gray-100 rounded-lg p-4">
@@ -95,7 +94,7 @@ function Portfolio() {
           </div>
 
           <div className="p-8 border-t border-gray-200">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Experience</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Expérience</h2>
             {member.experience?.map((exp, index) => (
               <div key={index} className="mb-6">
                 <h3 className="text-xl font-semibold text-gray-900">{exp.role}</h3>
@@ -107,7 +106,7 @@ function Portfolio() {
           </div>
 
           <div className="p-8 border-t border-gray-200">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Education</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Éducation</h2>
             {member.education?.map((edu, index) => (
               <div key={index} className="mb-6">
                 <h3 className="text-xl font-semibold text-gray-900">{edu.degree}</h3>
@@ -120,7 +119,7 @@ function Portfolio() {
 
           {member.projects && (
             <div className="p-8 border-t border-gray-200">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Projects</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Projets</h2>
               {member.projects.map((project, index) => (
                 <div key={index} className="mb-6">
                   <p className="text-gray-700">{project}</p>

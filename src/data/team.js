@@ -1,8 +1,6 @@
 
-import khadijah from "../assets/images/khadijah.jpg";
 import mouha from "../assets/images/mouha.jpg";
 import lamine from "../assets/images/lamine.jpg";
-import moussa from "../assets/images/moussa.jpg";
 import abdoulkarim from "../assets/images/abdoulkarim.jpg";
 export const teamMembers = [
     {
