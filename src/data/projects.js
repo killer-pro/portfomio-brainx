@@ -1,5 +1,9 @@
 import brainx from "../assets/images/brainx.jpeg";
 import senproject from "../assets/images/senproject.png";
+import bhybride from "../assets/images/bhybride.png";
+import medical from "../assets/images/medical.jpg";
+import compression_audio from "../assets/images/compression_audio.jpg";
+import sommeil from "../assets/images/sommeil.jpg";
 export const projects = [{
         id: 1,
         title: "Application e-commerce complète",
@@ -122,7 +126,7 @@ export const projects = [{
     {
         id: 14,
         title: "Digitalisation des conflits fonciers au Sénégal",
-        description: "Conception d’un système de gestion des litiges fonciers basé sur une modélisation UML, pour améliorer la transparence, la traçabilité et l'accès à l'information.",
+        description: "Conception d'un système de gestion des litiges fonciers basé sur une modélisation UML, pour améliorer la transparence, la traçabilité et l'accès à l'information.",
         image: "https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg",
         technologies: ["UML", "StarUML", "Django", "PostgreSQL"],
         demoUrl: "https://www.canva.com/design/DAGDh2A6waA/sELP42v_TSkjCwRDImnBQw/edit?utm_content=DAGDh2A6waA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
@@ -140,7 +144,7 @@ export const projects = [{
     {
         id: 16,
         title: "Système de Parking Automatisé",
-        description: "Conception d’un système de stationnement automatique avec barrière contrôlée par capteurs à ultrasons et carte Arduino, affichage du nombre de places disponibles.",
+        description: "Conception d'un système de stationnement automatique avec barrière contrôlée par capteurs à ultrasons et carte Arduino, affichage du nombre de places disponibles.",
         image: "https://images.pexels.com/photos/248547/pexels-photo-248547.jpeg",
         technologies: ["Arduino", "Capteurs Ultrason", "Servo-moteur", "C++"],
         demoUrl: "https://drive.google.com/file/d/119VW-xoT9ffpK-QFaAQdh3R6MAusJkwL/view?usp=share_link",
@@ -149,11 +153,46 @@ export const projects = [{
     {
         id: 17,
         title: "Système d'authentification et achats de tickets resto virtuels par QR Code",
-        description: "Développement d’un système sécurisé d’authentification  et gestion de la restauration par QR Code pour élèves, incluant une base de données centralisée et une interface de scan temps réel.",
+        description: "Développement d'un système sécurisé d'authentification  et gestion de la restauration par QR Code pour élèves, incluant une base de données centralisée et une interface de scan temps réel.",
         image: "https://www.imprimerie-dijon.com/wp-content/uploads/2024/09/qr-code-carre-table-exterieur.png",
         technologies: ["Django", "SQLite", "qrcode", "OpenCV", "Python"],
         demoUrl: "https://drive.google.com/file/d/11Khfhr9XmjiaoT2rPS11mnZsCWlH-mZg/view?usp=share_link",
         githubUrl: "#"
     },
-
+    {
+        id: 18,
+        title: "Boutique Hybride",
+        description: "Développement d'une solution innovante combinant vente physique et digitale, intégrant la génération de QR Codes pour chaque produit et un chatbot intelligent pour accompagner les clients, que ce soit en magasin ou en ligne.",
+        image: bhybride,
+        technologies: ["React", "Node.js", "QR Code", "Chatbot", "MongoDB"],
+        demoUrl: "https://drive.google.com/file/d/1dkUHXjS9AAc2VLkMJlWcrP5Z6C6MvDQF/view?usp=sharing",
+        githubUrl: "#"
+    },
+    {
+        id: 19,
+        title: "Aide au Pré-diagnostic Médical",
+        description: "Mise en place d'un modèle de machine learning pour assister les professionnels de santé dans le pré-diagnostic médical, en analysant les symptômes et antécédents pour proposer des pistes de diagnostic.",
+        image: medical,
+        technologies: ["Python", "Scikit-learn", "ML", "Streamlit"],
+        demoUrl: "#",
+        githubUrl: "#"
+    },
+    {
+        id: 21,
+        title: "Compression Audio",
+        description: "Développement d'un algorithme de compression audio innovant permettant de réduire la taille des fichiers tout en préservant la qualité sonore, idéal pour le streaming et le stockage efficace.",
+        image: compression_audio,
+        technologies: ["Python", "DSP", "Audio Processing", "C++"],
+        demoUrl: "#",
+        githubUrl: "#"
+    },
+    {
+        id: 22,
+        title: "Analyse du Sommeil (Analyse de données)",
+        description: "Étude approfondie des données de sommeil à l'aide de techniques d'analyse de données pour identifier les facteurs influençant la qualité du sommeil et proposer des recommandations personnalisées.",
+        image: sommeil,
+        technologies: ["Python", "Pandas", "Data Analysis", "ML"],
+        demoUrl: "#",
+        githubUrl: "#"
+    },
 ];
