@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import metalx from "../assets/images/metalx.jpg";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -16,10 +15,10 @@ function Team() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl">
-            Meet Our Team
+            Découvrez notre équipe
           </h2>
           <p className="mt-4 text-xl text-gray-600">
-            Talented software engineers from École Polytechnique de Thiès
+            Ingénieurs logiciels talentueux de l'École Polytechnique de Thiès
           </p>
         </motion.div>
 
@@ -74,7 +73,7 @@ function Team() {
                   to={`/portfolio/${member.id}`}
                   className="w-full inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 transition-colors duration-200 shadow-md hover:shadow-lg"
                 >
-                  Voir biographie complète
+                  Voir la biographie complète
                 </Link>
               </div>
             </motion.div>

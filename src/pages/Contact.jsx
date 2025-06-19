@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
@@ -22,8 +21,8 @@ function Contact() {
     console.log(formData);
     
     toast({
-      title: "Message sent!",
-      description: "Thank you for your message. We'll get back to you soon.",
+      title: "Message envoyé !",
+      description: "Merci pour votre message. Nous vous répondrons bientôt.",
     });
     
     // Reset form
@@ -51,10 +50,10 @@ function Contact() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            Contact Us
+            Contactez-nous
           </h2>
           <p className="mt-4 text-lg text-gray-500">
-            Get in touch with our team for collaboration opportunities
+            Contactez notre équipe pour des opportunités de collaboration
           </p>
         </motion.div>
 
@@ -64,7 +63,7 @@ function Contact() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             className="bg-white rounded-lg shadow-md p-6 text-center">
-            <h3 className="text-xl font-bold mb-6">Contact Information</h3>
+            <h3 className="text-xl font-bold mb-6">Informations de contact</h3>
             
             <div className="space-y-4 flex items-center flex-col ">
               <div className="flex items-center ">
@@ -77,7 +76,7 @@ function Contact() {
               </div>
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 text-indigo-600 mr-3" />
-                <span>Ecole polythechnique de Thies , route tivaouane</span>
+                <span>École Polytechnique de Thiès, route de Tivaouane</span>
               </div>
             </div>
           </motion.div>

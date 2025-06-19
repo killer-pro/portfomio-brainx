@@ -48,13 +48,13 @@ function Footer() {
             </h3>
             <div className="mt-4 flex space-x-6">
               <a
-                href="mailto:team@brainx.com"
+                href="mailto:mouhamadoudc@ept.sn"
                 className="text-gray-400 hover:text-gray-500"
               >
                 <FaEnvelope className="h-6 w-6" />
               </a>
               <a
-                href="https://github.com/brainx"
+                href="https://github.com/killer-pro"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-500"
@@ -62,7 +62,7 @@ function Footer() {
                 <FaGithub className="h-6 w-6" />
               </a>
               <a
-                href="https://linkedin.com/company/brainx"
+                href="https://www.linkedin.com/in/mouhamadou-diouf-ciss%C3%A9-9303a12aa"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-500"
