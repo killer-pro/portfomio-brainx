@@ -6,38 +6,6 @@ import moussa from "../assets/images/moussa.jpg";
 import abdoulkarim from "../assets/images/abdoulkarim.jpg";
 export const teamMembers = [
     {
-        id: 1,
-        name: "Khadidiatou DIOME",
-        role: "Elève Ingénieur en Informatique et Télécommunications ",
-        image: khadijah,
-        email: "diomkhadidiatou@ept.sn",
-        linkedin: "https://linkedin.com/in/khadidiatou-diome",
-        github: "https://github.com/khadidiatou-diome",
-        bio: "Passionnée d'Intelligence Artificielle,d'IOT et de cybersécurité.",
-        biography: [
-            "Mon parcours dans le domaine de l'ingénierie informatique a commencé par une fascination pour la façon dont la technologie peut transformer notre quotidien. Dès mon plus jeune âge, j'ai été captivée par les possibilités infinies qu'offre l'informatique pour résoudre des problèmes complexes.",
-            "Ma passion pour la cybersécurité s'est développée lors d'un atelier universitaire où j'ai découvert l'importance de protéger nos infrastructures numériques. Cette révélation a orienté mon parcours académique et m'a poussée à approfondir mes connaissances dans ce domaine crucial à l'ère du numérique.",
-            "À l'École Polytechnique de Thiès, j'ai eu l'opportunité d'explorer divers aspects de l'informatique, mais c'est l'intelligence artificielle et l'IoT qui ont particulièrement retenu mon attention. Je suis convaincue que ces technologies représentent l'avenir de notre société numérique et je souhaite contribuer activement à leur développement.",
-            "Mon stage à Sonatel m'a permis de mettre en pratique mes connaissances théoriques et de comprendre les enjeux réels de la cybersécurité en entreprise. Cette expérience a renforcé ma détermination à devenir une experte dans ce domaine pour contribuer à un monde numérique plus sûr."
-        ],
-        skills: ["Cybersécurité", "Gestion de projet", "Machine Learning", "Réseaux", "Développement Web & Mobile", "Systèmes Embarqués", "Cloud Computing", "Gestion de données...."],
-        experience: [{
-            role: "Stagiaire",
-            company: "Sonatel",
-            period: "Août 2024 - Décembre 2024",
-            description: "Auditeur Junior au niveau de la DSI/SPA"
-        }
-        ],
-        education: [
-            {
-            degree: "DIC2 (2eme année de spécialisation)",
-            school: "École Polytechnique de Thiès",
-            period: "2021 - Present",
-            description: "Formation généraliste en Informatique et Télécommunications "
-        }
-        ]
-    },
-    {
         id: 2,
         name: "Mouhamadou Diouf CISSE",
         role: "Elève Ingénieur en Informatique et Télécommunications",

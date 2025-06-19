@@ -1,16 +1,17 @@
 import brainx from "../assets/images/brainx.jpeg";
+import senproject from "../assets/images/senproject.png";
 export const projects = [{
         id: 1,
         title: "Application e-commerce complète",
         description: "Développement d'une application e-commerce couvrant l'ensemble du processus, de l'achat à la livraison, incluant : gestion des stocks, panier, paiement sécurisé, et suivi des commandes en temps réel.",
-        image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg",
+        image: "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/259622089/original/20f7f0b51335b8f8ea8a278e55d2d6ca50d53a1e/build-e-commerce-application.jpg",
         technologies: ["React", "Node.js", "MongoDB", "Stripe", "Redux"],
         demoUrl: "#",
         githubUrl: "#"
     },
     {
         id: 2,
-        title: "Surveillance intelligente de pipelines",
+        title: "Surveillance intelligente de pipelines de gaz de la petrosen",
         description: "Développement d'une plateforme IoT intelligente pour le suivi d'un réseau de pipelines de gaz avec détection de fuites en temps réel via IA.",
         image: brainx,
         technologies: ["IoT", "Python", "TensorFlow", "React", "InfluxDB"],
@@ -22,7 +23,7 @@ export const projects = [{
         id: 3,
         title: "Optimisation d'emploi du temps",
         description: "Développement d'un système d'optimisation d'emplois du temps prenant en compte toutes les contraintes utilisateurs à l'aide d'algorithmes de graphes et de techniques d'ordonnancement.",
-        image: "https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg",
+        image: "https://emjpv36xdx4.exactdn.com/wp-content/uploads/2024/10/Emploi-du-temps-detude.jpg?strip=all&lossy=1&quality=83&sharp=1&ssl=1",
         technologies: ["Python", "NetworkX", "React", "FastAPI"],
         demoUrl: "#",
         githubUrl: "#"
@@ -31,7 +32,7 @@ export const projects = [{
         id: 4,
         title: "Environnement Jupyter Notebook en HTML",
         description: "Création d'une application web qui simule l'environnement Jupyter Notebook, en interprétant du HTML pour afficher et exécuter dynamiquement du code dans une interface interactive.",
-        image: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
+        image: "https://www.esrf.fr/files/live/sites/www/files/UsersAndScience/Experiments/CRG/BM02/fromProfileChahine/data_analysis/Jupyter.PNG",
         technologies: ["JavaScript", "React", "Monaco Editor", "WebAssembly"],
         demoUrl: "#",
         githubUrl: "#"
@@ -40,7 +41,7 @@ export const projects = [{
         id: 5,
         title: "Système IoT de surveillance de séchoirs solaires",
         description: "Développement d'un dispositif de surveillance et de contrôle à distance d'un réseau de séchoirs solaires, basé sur l'IoT et le cloud.",
-        image: "https://images.pexels.com/photos/373912/pexels-photo-373912.jpeg",
+        image: "https://www.shieldenchannel.com/cdn/shop/articles/solar-monitoring-systems-from-how-they-work-to-buying-guide-989992.jpg?v=1737592676&width=600",
         technologies: ["IoT", "Python", "MQTT", "React", "InfluxDB"],
         demoUrl: "#",
         githubUrl: "#"
@@ -49,7 +50,7 @@ export const projects = [{
         id: 6,
         title: "Mini-jeux JavaScript",
         description: "Programmation de plusieurs jeux classiques en JavaScript, notamment : Démineur, Dames, 2048 et Tic-Tac-Toe, en mettant l'accent sur l'interactivité, les animations et l'algorithmique.",
-        image: "https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg",
+        image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*QXUdmpRnVlfEn2ZuEfoiEw.png",
         technologies: ["JavaScript", "HTML5 Canvas", "CSS3"],
         demoUrl: "#",
         githubUrl: "#"
@@ -58,7 +59,7 @@ export const projects = [{
         id: 7,
         title: "Plateforme de soumission de projets",
         description: "Développement d'une application web permettant aux porteurs de projets de publier, vulgariser et partager leurs idées à l'échelle nationale.",
-        image: "https://images.pexels.com/photos/7376/startup-photos.jpg",
+        image: senproject ,
         technologies: ["React", "Node.js", "MongoDB", "AWS"],
         demoUrl: "#",
         githubUrl: "#"
@@ -103,7 +104,7 @@ export const projects = [{
         id: 12,
         title: "Plateforme de recommandation d'ordinateurs (ML)",
         description: "Création d'une application de traitement de données et de machine learning basée sur une base de données d'ordinateurs, permettant de recommander automatiquement la machine la plus adaptée et la moins chère selon les critères définis par l'utilisateur.",
-        image: "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_EhDQiNf0FTUdu8VBCgYBrcD-gr3BXeW5WQ&s",
         technologies: ["Python", "TensorFlow", "React", "FastAPI", "PostgreSQL"],
         demoUrl: "#",
         githubUrl: "#"
@@ -131,7 +132,7 @@ export const projects = [{
         id: 15,
         title: "Prédiction de Diabète",
         description: "Application de techniques de machine learning pour prédire les risques de diabète à partir de données cliniques (PIMA dataset), avec visualisations et interface web.",
-        image: "https://images.pexels.com/photos/6129276/pexels-photo-6129276.jpeg",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcxZV6nsT8wh1ajbKvd-IBIanlx0IYzuhWDA&s",
         technologies: ["Python", "Scikit-learn", "Pandas", "Streamlit"],
         demoUrl: "https://www.canva.com/design/DAGDCRXSdoE/07TWY-qIGxKsfPYprcYZ8Q/edit?utm_content=DAGDCRXSdoE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
         githubUrl: "#"
@@ -149,7 +150,7 @@ export const projects = [{
         id: 17,
         title: "Système d'authentification et achats de tickets resto virtuels par QR Code",
         description: "Développement d’un système sécurisé d’authentification  et gestion de la restauration par QR Code pour élèves, incluant une base de données centralisée et une interface de scan temps réel.",
-        image: "https://images.pexels.com/photos/3689531/pexels-photo-3689531.jpeg",
+        image: "https://www.imprimerie-dijon.com/wp-content/uploads/2024/09/qr-code-carre-table-exterieur.png",
         technologies: ["Django", "SQLite", "qrcode", "OpenCV", "Python"],
         demoUrl: "https://drive.google.com/file/d/11Khfhr9XmjiaoT2rPS11mnZsCWlH-mZg/view?usp=share_link",
         githubUrl: "#"
