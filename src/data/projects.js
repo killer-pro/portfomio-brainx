@@ -13,6 +13,10 @@ import trafficnfc from "../assets/images/trafficnfc.png";
 import nfc4care from "../assets/images/nfc4care.png";
 import tontooCover from "../assets/images/tontoo_cover.jpg";
 import routageCourrier from "../assets/images/routage_courrier.png";
+import senelecCover from "../assets/images/senelec_cover.jpg";
+import dakarflowCover from "../assets/images/dakarflow_cover.jpg";
+import fadjugawCover from "../assets/images/fadjugaw_cover.jpg";
+import petrosenCover from "../assets/images/petrosen_pipeline_cover.jpg";
 
 export const projects = [
     {
@@ -37,6 +41,46 @@ export const projects = [
         ]
     },
     {
+        id: 25,
+        title: "DakarFlow – Expérience Spectateur & Mobilité Intelligente (JOJ Dakar 2026)",
+        subtitle: "Lauréat 1er Prix JOJ Innovation Challenge Hackathon 2026",
+        category: "Applications & Cloud",
+        featured: true,
+        author: "Team Metal-X",
+        tag: "JOJ Dakar 2026 (1er Prix)",
+        description: "Solution digitale d'expérience spectateur et de mobilité urbaine conçue pour accompagner les Jeux Olympiques de la Jeunesse (JOJ Dakar 2026). L'application fluidifie le parcours des visiteurs et participants à travers une navigation multi-sites simple, des informations temps réel sur les épreuves, un espace programme officiel, un module de signalement d'incidents, une couche d'engagement interactive et un assistant virtuel intelligent multilingue (Français, Wolof, Anglais). Cette plateforme multilingue met en valeur la richesse touristique du Sénégal et sélectionne les meilleurs bons plans afin d'enrichir la découverte culturelle, de guider les usagers et de rendre l'expérience sportive totalement immersive.",
+        image: dakarflowCover,
+        technologies: ["React Native (Expo)", "Spring Boot 3", "PostgreSQL", "Assistant Virtuel IA (LLM)", "Routage OSRM", "Mapbox", "REST API", "JWT"],
+        demoUrl: "https://www.canva.com/design/DAHH25J-G5k/KkkodiZBP7l2KvSi-LxLuQ/view",
+        githubUrl: null,
+        metrics: [
+            { label: "Distinction", value: "🥇 1er Prix JOJ" },
+            { label: "Édition", value: "JOJ Dakar 2026" },
+            { label: "Sites Couverts", value: "Multi-sites" },
+            { label: "Langues", value: "Multilingue" }
+        ]
+    },
+    {
+        id: 24,
+        title: "SENELEC – Plateforme d'Écoute Client Intelligente & Gestion Opérationnelle H24",
+        subtitle: "Écosystème Industriel Unifié (4 Applications & Assistant IA SENIA)",
+        category: "Intelligence Artificielle",
+        featured: true,
+        author: "Team Metal-X (Tech Lead: Mouhamadou Diouf CISSE)",
+        tag: "Projet Industriel SENELEC",
+        description: "Plateforme d'entreprise de bout en bout conçue pour la SENELEC, unifiant la gestion commerciale (réclamations clients, facturation, compteurs) et la distribution H24 (incidents réseau & dispatching cartographique temps réel). Issue de la victoire de MetalX au hackathon SENELEC et menée jusqu'à la livraison du MVP industriel prêt pour pilote, la solution orchestre 4 applications : App Mobile Client (déclaration et suivi d'interventions), App Mobile Agent Terrain (gestion des ordres de mission géolocalisés), Tableau de Bord Web unifié pour 9 rôles métier (déduplication automatique des pannes et suivi SLA), et l'Assistant IA multi-canal SENIA (RAG Weaviate, bilingue Français & Wolof, intégré sur Mobile, WhatsApp et Facebook). Cœur réactif haute performance développé en Java 21, Spring Boot, PostgreSQL/PostGIS, Redis et WebSockets.",
+        image: senelecCover,
+        technologies: ["Java 21 / Spring Boot", "Python / FastAPI", "Assistant IA SENIA (Wolof & FR)", "RAG (Weaviate)", "React & TypeScript", "React Native (Expo)", "PostgreSQL & PostGIS", "Redis & WebSockets", "Mapbox", "Docker"],
+        demoUrl: null,
+        githubUrl: null,
+        metrics: [
+            { label: "Applications", value: "4 Apps" },
+            { label: "Rôles Métier", value: "9 Profils" },
+            { label: "Supervision", value: "H24 / Temps Réel" },
+            { label: "Langues IA", value: "FR & Wolof" }
+        ]
+    },
+    {
         id: 35,
         title: "Routage Intelligent de Courrier – Classification & Distribution IA par CamemBERT-large (Sonatel)",
         subtitle: "Projet de Fin d'Études (Mémoire) – Abdoulkarim LY",
@@ -58,16 +102,23 @@ export const projects = [
     },
     {
         id: 23,
-        title: "FadjuGaw – Dossier Médical NFC & Copilote IA d'Aide au Diagnostic",
-        subtitle: "Santé Connectée & Intelligence Artificielle Médicale",
+        title: "Fadju Gaww – Écosystème e-Santé, Dossier Médical NFC & IA d'Aide au Diagnostic",
+        subtitle: "Lauréat 1er Prix Africa T-Awards 2026 (Security & Privacy by Design)",
         category: "Santé & MedTech",
         featured: true,
-        tag: "MedTech & IA Clinique",
-        description: "Dispositif MedTech d'urgence et de suivi clinique combinant cartes santé sans contact NFC et intelligence artificielle. FadjuGaw permet aux médecins et services de réanimation d'accéder instantanément au profil médical complet du patient (groupe sanguin, allergies, pathologies chroniques, chirurgies passées), même en zone blanche sans réseau Internet. La plateforme intègre un puissant copilote IA d'aide au diagnostic qui synthétise l'ensemble de l'historique médical pour suggérer des pistes cliniques fiables, alerter sur des interactions médicamenteuses à risque et accélérer la prise en charge vitale.",
-        image: nfc4care,
-        technologies: ["IA Médicale", "Aide au Diagnostic", "NFC (NTAG / Mifare)", "Flutter & Dart", "Spring Boot", "Sécurité Santé & JWT", "PostgreSQL", "Chiffrement AES-256"],
-        demoUrl: null,
-        githubUrl: null
+        author: "Team Metal-X",
+        tag: "Africa T-Awards 2026 (1er Prix)",
+        description: "Écosystème e-Santé souverain et sécurisé primé au niveau continental par le 1er Prix Africa T-Awards 2026 (Security & Privacy by Design). Fadju Gaww (conçu sous le projet CareLink / SecureIDChain) interconnecte les patients, soignants, pharmacies et services d'urgence dans une architecture résiliente. La solution intègre une application mobile patient complète (carnet de santé numérique, rappels intelligents de prises de traitement, recherche de pharmacies et commande d'ordonnances), un dossier médical d'urgence sans contact consultable instantanément par carte NFC même hors connexion internet, et un copilote IA clinique d'aide au diagnostic analysant l'ensemble de l'historique médical (antécédents, pathologies chroniques, allergies) pour alerter sur les interactions médicamenteuses à risque et guider le médecin. Le tout est sécurisé par la blockchain Hyperledger Besu garantissant une intégrité infalsifiable des données de santé et un consentement strict du patient.",
+        image: fadjugawCover,
+        technologies: ["React Native / Expo", "Java 21 / Spring Boot 3", "Hyperledger Besu (Blockchain)", "NFC (NTAG / Mifare)", "IA Clinique (Aide au Diagnostic)", "PostgreSQL", "Solidity & Smart Contracts", "Chiffrement AES-256 & 2FA"],
+        demoUrl: "https://www.canva.com/design/DAHJYXBxEJI/vpJpVWNXE1PkkGqARV_8Vw/view",
+        githubUrl: null,
+        metrics: [
+            { label: "Distinction", value: "🥇 1er Prix Africa" },
+            { label: "Sécurité", value: "Privacy by Design" },
+            { label: "Dossier Médical", value: "NFC Offline" },
+            { label: "Architecture", value: "Blockchain & IA" }
+        ]
     },
     {
         id: 2,
@@ -77,7 +128,7 @@ export const projects = [
         featured: true,
         tag: "Industrie & Énergie",
         description: "Solution critique d'ingénierie industrielle pour le réseau de transport gazier de Petrosen. Déploiement d'un maillage de capteurs IoT haute fréquence connectés à un moteur d'IA de détection prédictive d'anomalies et de fuites de pression en temps réel. Visualisation télémétrique instantanée, déclenchement d'alertes automatisées et maintenance préventive pour une sécurité énergétique optimale.",
-        image: brainx,
+        image: petrosenCover,
         technologies: ["IoT Industriel", "Python", "TensorFlow", "React", "InfluxDB (Time-Series)", "MQTT", "Docker"],
         demoUrl: null,
         githubUrl: null

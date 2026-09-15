@@ -26,8 +26,10 @@ function Portfolio() {
     );
   }
 
-  // Find featured thesis project (either defined directly on member or for id 2)
-  const thesisProject = member.thesisProject || (member.id === 2 ? projects.find(p => p.id === 1) : null);
+  // Find featured projects for Mouhamadou Diouf CISSE (Tontoo, DakarFlow & SENELEC)
+  const flagshipProjects = member.id === 2 ? projects.filter(p => p.id === 1 || p.id === 24 || p.id === 25) : [];
+  // Find featured thesis project (e.g. for Abdoulkarim LY)
+  const thesisProject = member.thesisProject;
 
   return (
     <div className="bg-slate-50 min-h-screen py-12">
@@ -132,6 +134,66 @@ function Portfolio() {
             </div>
           </div>
 
+          {/* Featured Flagship Projects Section for Mouhamadou Diouf CISSE */}
+          {flagshipProjects.length > 0 && (
+            <div className="p-8 sm:p-10 bg-indigo-50/50 border-b border-indigo-100 space-y-8">
+              <div>
+                <div className="inline-flex items-center space-x-2 text-indigo-700 text-xs font-black uppercase tracking-wider mb-2">
+                  <FaAward className="text-base text-amber-500" />
+                  <span>Projets Phares Réalisés (Sonatel & SENELEC)</span>
+                </div>
+                <h2 className="text-2xl font-extrabold text-slate-900">
+                  Réalisations Majeures & Direction Technique
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 gap-6">
+                {flagshipProjects.map((p) => (
+                  <div key={p.id} className="bg-white p-6 sm:p-7 rounded-2xl border border-indigo-100 shadow-sm">
+                    <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                      <span className="px-3 py-1 rounded-full text-xs font-black bg-indigo-100 text-indigo-800">
+                        {p.tag || p.category}
+                      </span>
+                      {p.subtitle && (
+                        <span className="text-xs font-semibold text-slate-500">
+                          {p.subtitle}
+                        </span>
+                      )}
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">
+                      {p.title}
+                    </h3>
+                    <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                      {p.description}
+                    </p>
+
+                    {/* Metrics Grid */}
+                    {p.metrics && (
+                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 my-4">
+                        {p.metrics.map((m, idx) => (
+                          <div key={idx} className="bg-slate-50 p-3 rounded-xl border border-slate-200/70 text-center">
+                            <div className="text-base font-black text-indigo-700">{m.value}</div>
+                            <div className="text-[10px] font-bold text-slate-500 uppercase">{m.label}</div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    <div className="mt-4 flex flex-wrap items-center gap-3">
+                      <Link
+                        to="/projects"
+                        className="inline-flex items-center px-4 py-2 rounded-xl text-xs font-bold text-white bg-indigo-600 hover:bg-indigo-700 shadow-sm"
+                      >
+                        {p.isVideoDemo ? <FaPlay className="mr-2 text-[10px]" /> : <FaExternalLinkAlt className="mr-2 text-[10px]" />}
+                        Voir dans le catalogue de projets
+                      </Link>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Featured Thesis Section (PFE) */}
           {thesisProject && (
             <div className="p-8 sm:p-10 bg-indigo-50/60 border-b border-indigo-100">
@@ -221,8 +283,6 @@ function Portfolio() {
             </div>
           )}
 
-
-
           {/* Official Certifications Section */}
           {member.certifications && (
             <div className="p-8 sm:p-10 border-b border-slate-100 bg-indigo-50/30">
@@ -249,7 +309,6 @@ function Portfolio() {
               </div>
             </div>
           )}
-
 
 
           {/* Biography & Motivation */}
@@ -335,6 +394,27 @@ function Portfolio() {
               ))}
             </div>
           </div>
+
+          {/* Leadership & Engagements */}
+          {member.leadership && (
+            <div className="p-8 sm:p-10 border-b border-slate-100">
+              <h2 className="text-2xl font-bold text-slate-900 mb-6">Leadership & Engagements</h2>
+              <div className="space-y-6">
+                {member.leadership.map((lead, index) => (
+                  <div key={index} className="bg-slate-50 p-6 rounded-2xl border border-slate-200/80">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-1">
+                      <h3 className="text-lg font-bold text-slate-900">{lead.role}</h3>
+                      <span className="text-xs font-bold text-indigo-600 bg-indigo-50 px-2.5 py-1 rounded-full w-fit mt-1 sm:mt-0">
+                        {lead.period}
+                      </span>
+                    </div>
+                    <p className="text-sm font-semibold text-slate-700 mb-2">{lead.org}</p>
+                    <p className="text-sm text-slate-600 leading-relaxed">{lead.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Research & IT Staff Section */}
           {member.research && (
