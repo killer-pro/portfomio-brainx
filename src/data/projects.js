@@ -12,6 +12,7 @@ import repupass from "../assets/images/repupass.jpg";
 import trafficnfc from "../assets/images/trafficnfc.png";
 import nfc4care from "../assets/images/nfc4care.png";
 import tontooCover from "../assets/images/tontoo_cover.jpg";
+import routageCourrier from "../assets/images/routage_courrier.png";
 
 export const projects = [
     {
@@ -33,6 +34,26 @@ export const projects = [
             { label: "Économie sur 3 ans", value: "272 M FCFA" },
             { label: "Fiabilité mesurée", value: "98.4%" },
             { label: "Latence moyenne", value: "4.1s" }
+        ]
+    },
+    {
+        id: 35,
+        title: "Routage Intelligent de Courrier – Classification & Distribution IA par CamemBERT-large (Sonatel)",
+        subtitle: "Projet de Fin d'Études (Mémoire) – Abdoulkarim LY",
+        category: "Mémoire / PFE",
+        featured: false,
+        author: "Abdoulkarim LY",
+        tag: "Projet de Fin d'Études (Sonatel)",
+        description: "Conception d'un microservice d'intelligence artificielle pour la Sonatel visant à automatiser l'analyse sémantique, la classification fine et le routage des flux de courriers administratifs vers les directions compétentes (DDE, DR, DFC, DRJ, DST...). La solution s'appuie sur le modèle CamemBERT-large, sélectionné et retenu suite à un benchmark comparatif approfondi de plusieurs approches NLP. Elle intègre l'encodage dynamique des référentiels métiers et un tableau de bord de télémétrie en temps réel des prédictions.",
+        image: routageCourrier,
+        technologies: ["CamemBERT-large", "FastAPI (Python 3.12)", "Transformers & NLP", "Benchmark Comparatif", "Encodage Sémantique", "Télémétrie Temps Réel"],
+        demoUrl: null,
+        githubUrl: null,
+        metrics: [
+            { label: "Inférence IA (p50)", value: "20 ms" },
+            { label: "Latence API Globale", value: "540 ms" },
+            { label: "Empreinte RAM (CPU)", value: "1.5 Go" },
+            { label: "Souveraineté Données", value: "100% Local" }
         ]
     },
     {
