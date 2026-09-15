@@ -2,105 +2,113 @@
 import mouha from "../assets/images/mouha.jpg";
 import lamine from "../assets/images/lamine.jpg";
 import abdoulkarim from "../assets/images/abdoulkarim.jpg";
+
 export const teamMembers = [
     {
         id: 2,
         name: "Mouhamadou Diouf CISSE",
-        role: "Elève Ingénieur en Informatique et Télécommunications",
+        role: "Ingénieur Diplômé en Informatique et Télécommunications",
         image: mouha,
         email: "mouhamadoudc@ept.sn",
         linkedin: "https://www.linkedin.com/in/mouhamadou-diouf-ciss%C3%A9-9303a12aa",
         github: "https://github.com/killer-pro",
-        bio: "Étudiant en génie informatique et télécommunications passionné par les solutions innovantes, l'IA, les algorithmes, l'IoT et les réseaux.",
+        bio: "Ingénieur diplômé de l'École Polytechnique de Thiès, spécialisé en Intelligence Artificielle Agentique (LLM), architectures réactives, Full-Stack, Cloud et systèmes IoT.",
         biography: [
-            "Mon parcours dans le monde de la technologie a débuté par une curiosité insatiable pour comprendre comment fonctionnent les systèmes qui nous entourent. Cette curiosité m'a conduit à l'École Polytechnique de Thiès, où j'ai découvert ma véritable passion pour l'ingénierie informatique.",
-            "Ce qui me motive profondément, c'est la capacité de l'informatique à résoudre des problèmes concrets et à améliorer la vie des gens. Je suis particulièrement fasciné par les algorithmes et leur capacité à optimiser des processus complexes. Cette fascination m'a poussé à me spécialiser dans ce domaine et à explorer continuellement de nouvelles approches algorithmiques.",
-            "L'intelligence artificielle représente pour moi l'avenir de notre discipline. J'ai consacré de nombreuses heures à étudier les principes du machine learning et à développer des projets personnels dans ce domaine. Mon objectif est de contribuer à des solutions IA qui soient à la fois performantes et éthiques.",
-            "Mon expérience de stage chez Sonatel a été un tournant dans mon parcours professionnel. En tant que développeur full stack, j'ai pu mettre en pratique mes connaissances théoriques et collaborer avec des experts du secteur. Cette expérience m'a confirmé ma passion pour le développement et m'a permis d'acquérir une vision plus concrète des enjeux du monde professionnel."
+            "Mon parcours dans le monde de la technologie est guidé par une passion indéfectible pour la conception de systèmes intelligents et résilients. Diplômé de la prestigieuse École Polytechnique de Thiès, j'ai développé une expertise pointue à la croisée de l'intelligence artificielle, des algorithmes avancés et du génie logiciel.",
+            "Ce qui m'anime au quotidien, c'est de transformer des concepts théoriques de pointe en produits à fort impact économique et sociétal. Je conçois des architectures modernes capables de traiter des flux massifs de données tout en optimisant chaque milliseconde de latence.",
+            "Spécialiste de l'IA agentique et des modèles de langage de dernière génération (LLM), j'ai dirigé la conception et l'implémentation de Tontoo, l'assistant conversationnel multimodal et multicanal de la Sonatel pour 17 millions d'abonnés, alliant traitement de langues locales (Wolof natif), boucles ReAct et sécurité bancaire.",
+            "Mon expérience à la Sonatel en tant qu'ingénieur au sein de la Digital Factory m'a permis de déployer des solutions critiques en production sur OpenShift et de collaborer avec des équipes pluridisciplinaires de haut niveau."
         ],
-        skills: ["Java", "Python", "React", "Network Security", "Cloud Computing", "Docker", "springboot", "iot"],
-        experience: [{
-            role: "Stagiaire",
-            company: "Sonatel",
-            period: "Août 2024 - Décembre 2024",
-            description: "devellopeur full stack  Departement fusion team digital"
-        }],
-        education: [{
-            degree: "Engineering Degree in Computer Science and Telecommunications",
-            school: "École Polytechnique de Thiès",
-            period: "2021 - Present",
-            description: "Se concentre sur l'ingénierie réseau et le développement de logiciels, l'IOT et le cloud. passionné par tout ce qui concerne les algorithmes et les solutions innovantes."
-        }],
+        skills: ["LangGraph & LLM", "Python", "FastAPI", "Java / Spring Boot", "React", "Docker / OpenShift", "PostgreSQL & pgvector", "Cloud Computing", "IoT & Réseaux"],
+        experience: [
+            {
+                role: "Ingénieur Stagiaire PFE & Développeur Full Stack / IA",
+                company: "Sonatel (Direction Innovation & DSI)",
+                period: "Août 2024 - Présent",
+                description: "Conception et déploiement de l'agent conversationnel multicanal Tontoo (FastAPI, LangGraph, Gemini 3.1, ASR/TTS Wolof, OpenShift), génération d'économies stratégiques de plus de 270 M FCFA."
+            }
+        ],
+        education: [
+            {
+                degree: "Diplôme d'Ingénieur de Conception (DIC) en Informatique et Télécommunications",
+                school: "École Polytechnique de Thiès (EPT)",
+                period: "2021 - 2026",
+                description: "Formation d'élite en génie logiciel, intelligence artificielle, sécurité des systèmes, IoT et réseaux télécoms. Mémoire de fin d'études axé sur les architectures agentiques LLM pour les télécoms."
+            }
+        ],
     },
     {
         id: 3,
         name: "Abdoulkarim LY",
-        role: "Elève Ingénieur en Informatique et Télécommunications",
+        role: "Ingénieur Diplômé en Informatique et Télécommunications",
         image: abdoulkarim,
         email: "abdoulkarimly@gmail.com",
         linkedin: "https://www.linkedin.com/in/ly-abdoulkarim-9a083b282/",
         github: "https://github.com/kira9292",
-        bio: "Software engineering student focused on scalable architectures, clean code, and secure systems. Proficient in modern frameworks, CI/CD, and agile methods.",
+        bio: "Ingénieur logiciel diplômé de l'EPT spécialisé dans les architectures scalables, le Web3, la sécurité des systèmes et les méthodes DevOps / CI-CD.",
         biography: [
-            "Mon parcours dans le domaine de l'ingénierie logicielle est né d'une volonté de créer des systèmes robustes et élégants. J'ai toujours été fasciné par la beauté d'un code bien écrit et l'architecture des systèmes complexes qui fonctionnent de manière harmonieuse.",
-            "Ma motivation principale vient de la satisfaction de résoudre des problèmes techniques complexes et de voir mes solutions fonctionner dans le monde réel. Chaque projet est pour moi l'opportunité d'apprendre et de me perfectionner, tout en contribuant à quelque chose d'utile pour la société.",
-            "J'accorde une importance particulière à la sécurité des systèmes. Dans un monde de plus en plus connecté, la protection des données et des infrastructures est devenue cruciale. C'est pourquoi je m'efforce d'intégrer les meilleures pratiques de sécurité dans chacun de mes projets.",
-            "Mon stage chez Sonatel m'a permis de travailler sur des projets de télécommunications à grande échelle, me confrontant à des défis techniques stimulants. Cette expérience a renforcé ma compréhension des enjeux du secteur et m'a permis de développer des compétences pratiques précieuses."
+            "Diplômé en génie informatique et télécommunications à l'École Polytechnique de Thiès, je me concentre sur la conception de systèmes hautement disponibles, performants et sécurisés.",
+            "Ma démarche repose sur la rigueur du clean code, des architectures modulaires et de la cryptographie moderne. J'ai mené des projets innovants explorant la décentralisation Web3, les protocoles de consensus et les plateformes de contrôle sécurisé par NFC.",
+            "J'accorde une importance capitale à la résilience et à la gouvernance des données. Dans un environnement numérique hyper-connecté, la robustesse face aux attaques et la scalabilité des infrastructures sont au cœur de ma vision d'ingénieur.",
+            "Mon expérience pratique à la Sonatel m'a permis d'appréhender des infrastructures télécoms à grande échelle et de consolider des compétences avancées en administration système et intégration continue."
         ],
-        skills: ["Python", "React", "Network Protocols", "System Administration", "Cloud"],
-
-        experience: [{
-            role: "Software Development Intern",
-            company: "Sonatel",
-            period: "June 2023 - August 2023",
-            description: "Developed and maintained telecommunications software solutions."
-        }],
-        education: [{
-            degree: "Engineering Degree in Computer Science and Telecommunications",
-            school: "École Polytechnique de Thiès",
-            period: "2021 - Present",
-            description: "Specializing in telecommunications and software engineering."
-        }]
+        skills: ["Python", "React & TypeScript", "Web3 & Smart Contracts", "DevOps & CI/CD", "Protocoles Réseaux", "Sécurité des Systèmes", "Cloud"],
+        experience: [
+            {
+                role: "Software Engineering Intern",
+                company: "Sonatel",
+                period: "Juin 2023 - Août 2023",
+                description: "Développement et optimisation de composants applicatifs critiques et maintenance des plateformes télécoms."
+            }
+        ],
+        education: [
+            {
+                degree: "Diplôme d'Ingénieur de Conception (DIC) en Informatique et Télécommunications",
+                school: "École Polytechnique de Thiès (EPT)",
+                period: "2021 - 2026",
+                description: "Spécialisation avancée en génie logiciel distribué, sécurité des infrastructures et technologies réseaux."
+            }
+        ]
     },
     {
-        "id": 4,
-        "name": "Mouhamadou Lamine NDIAYE",
-        "role": "Élève Ingénieur en Informatique et Télécommunications",
-        "image": lamine,
-        "email": "nidayeml@ept.sn",
-        "linkedin": "www.linkedin.com/in/mouhamadou-lamine-ndiaye",
-        "github": "https://github.com/mlndiaye",
-        "bio": "Passionné par la cybersécurité et le développement web, s'intéresse également aux technologies modernes du cloud, aux systèmes embarqués et à l'intelligence artificielle.",
-        "biography": [
-            "Mon intérêt pour l'informatique a débuté très tôt, lorsque j'ai eu mon premier ordinateur à l'âge de 12 ans. Cette fascination initiale s'est transformée en une passion profonde pour la cybersécurité quand j'ai réalisé l'importance cruciale de protéger nos systèmes d'information.",
-            "En tant qu'élève ingénieur à l'École Polytechnique de Thiès, j'ai eu l'opportunité d'explorer différents domaines de l'informatique, mais c'est la cybersécurité et le développement web qui ont véritablement capté mon intérêt. J'apprécie particulièrement l'équilibre entre les aspects techniques et créatifs que ces domaines offrent.",
-            "Ma motivation principale est de contribuer à rendre le cyberespace plus sûr pour tous. À l'ère du numérique, où nos vies sont de plus en plus connectées, je crois fermement que la sécurité informatique est un pilier fondamental pour garantir la confiance dans nos infrastructures numériques.",
-            "Mon stage à la Sonatel a été une expérience enrichissante qui m'a permis de mettre en pratique mes connaissances théoriques et de travailler sur des projets concrets. Cette immersion dans le monde professionnel a renforcé ma conviction que je suis sur la bonne voie pour réaliser mes aspirations dans le domaine de la cybersécurité et du développement web."
+        id: 4,
+        name: "Mouhamadou Lamine NDIAYE",
+        role: "Ingénieur Diplômé en Informatique et Télécommunications",
+        image: lamine,
+        email: "nidayeml@ept.sn",
+        linkedin: "https://www.linkedin.com/in/mouhamadou-lamine-ndiaye",
+        github: "https://github.com/mlndiaye",
+        bio: "Ingénieur diplômé de l'EPT passionné par la cybersécurité offensive/défensive, le développement Cloud natif et les systèmes embarqués.",
+        biography: [
+            "Diplômé de l'École Polytechnique de Thiès en Informatique et Télécommunications, j'ai bâti mon profil autour d'une double expertise : la sécurité des systèmes d'information et le développement web/cloud distribué.",
+            "Convaincu que la sécurité doit être intégrée dès la première ligne de code (DevSecOps), je conçois des solutions logicielles conformes aux normes les plus rigoureuses, alliant haute performance applicative et résilience cryptographique.",
+            "Mes travaux m'ont également amené à concevoir des architectures hybrides mêlant systèmes embarqués IoT (ESP32, capteurs industriels) et backends réactifs hautement sollicités.",
+            "Mon passage à la Sonatel au sein de la DSI/SPA m'a permis de piloter des projets d'envergure, de sécuriser des points d'entrée applicatifs critiques et d'orchestrer des stacks microservices en production."
         ],
-        "skills": [
-            "Cybersécurité",
-            "Développement Web (Spring Boot, Django, Angular, React)",
+        skills: [
+            "Cybersécurité & DevSecOps",
+            "Développement Web (Spring Boot, Angular, React)",
             "DevOps (Docker, Kubernetes, CI/CD)",
-            "Cloud Computing (AWS, Azure, ... )",
-            "Gestion de projet (Agile, Scrum)",
-            "Bases de données (MySQL, PostgreSQL, MongoDB)",
-            "Réseaux & Protocoles",
-            "Systèmes Embarqués (ESP32, Arduino)",
-            "Intelligence Artificielle & Machine Learning"
+            "Cloud Computing (AWS, GCP)",
+            "Bases de données (PostgreSQL, MongoDB)",
+            "Systèmes Embarqués (ESP32, IoT)",
+            "IA & Machine Learning"
         ],
-        "experience": [{
-            "role": "Stagiaire",
-            "company": "Sonatel",
-            "period": "Août 2024 - Décembre 2024",
-            "description": "Développement Full Stack au sein de la DSI/SPA : conception et mise en œuvre de solutions web sécurisées en utilisant Spring Boot pour le backend et Angular pour le frontend."
-        }],
-        "education": [{
-            "degree": "DIC2 (2e année de spécialisation)",
-            "school": "École Polytechnique de Thiès",
-            "period": "2021 - Present",
-            "description": "Formation généraliste en Informatique et Télécommunications avec une spécialisation en cybersécurité, développement logiciel et systèmes distribués."
-        }]
-    },
-
-
+        experience: [
+            {
+                role: "Ingénieur Stagiaire Full Stack & Sécurité",
+                company: "Sonatel (DSI / SPA)",
+                period: "Août 2024 - Décembre 2024",
+                description: "Conception et mise en œuvre de solutions web bancaires et sécurisées sous Spring Boot et Angular, avec durcissement de la couche sécurité."
+            }
+        ],
+        education: [
+            {
+                degree: "Diplôme d'Ingénieur de Conception (DIC) en Informatique et Télécommunications",
+                school: "École Polytechnique de Thiès (EPT)",
+                period: "2021 - 2026",
+                description: "Formation polytechnicienne d'excellence avec spécialisation en cybersécurité, systèmes distribués et développement logiciel."
+            }
+        ]
+    }
 ];

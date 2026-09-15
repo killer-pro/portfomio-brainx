@@ -11,209 +11,225 @@ import dreamforge from "../assets/images/dreamforge.png";
 import repupass from "../assets/images/repupass.jpg";
 import trafficnfc from "../assets/images/trafficnfc.png";
 import nfc4care from "../assets/images/nfc4care.png";
+import tontooCover from "../assets/images/tontoo_cover.jpg";
+
 export const projects = [
     {
+        id: 1,
+        title: "Tontoo – Assistant IA Conversationnel Agentique Multimodal (Sonatel)",
+        subtitle: "Projet de Fin d'Études (Mémoire) – Mouhamadou Diouf CISSÉ",
+        category: "Mémoire / PFE",
+        featured: true,
+        author: "Mouhamadou Diouf CISSE",
+        tag: "Projet de Fin d'Études (Sonatel)",
+        description: "Refonte agentique de nouvelle génération de la relation client pour les 17 millions d'abonnés de Sonatel. Basé sur LangGraph et la boucle ReAct (raisonnement, action, observation), l'agent pilote 12 outils et 87 fonctionnalités métier (Orange Money, Pass Internet/Illimix, factures Woyofal/Senelec/Sen'Eau, réclamations). Il intègre une compréhension bilingue fluide Français & Wolof natif avec brique vocale souveraine (ASR WhisperLive & TTS Orpheus) et traitement multimodal (voix, texte, images, PDF). Sécurité bancaire inviolable via WebView Pinpad à usage unique (zero-knowledge LLM), supervision temps réel par LeeralAI (98,4% de fiabilité) et rentabilité majeure avec 90% de réduction de coûts (~272 M FCFA d'économies sur 3 ans).",
+        image: tontooCover,
+        technologies: ["LangGraph (ReAct)", "Gemini 3.1 Flash-Lite", "FastAPI (Python 3.12)", "ASR & TTS Wolof", "OpenShift (Malaaw)", "PostgreSQL / pgvector", "Redis", "Langfuse", "WebSockets"],
+        demoUrl: "/tontoo_demo.mp4",
+        isVideoDemo: true,
+        githubUrl: null,
+        metrics: [
+            { label: "Abonnés cibles", value: "17 Millions" },
+            { label: "Économie sur 3 ans", value: "272 M FCFA" },
+            { label: "Fiabilité mesurée", value: "98.4%" },
+            { label: "Latence moyenne", value: "4.1s" }
+        ]
+    },
+    {
+        id: 23,
+        title: "FadjuGaw – Dossier Médical NFC & Copilote IA d'Aide au Diagnostic",
+        subtitle: "Santé Connectée & Intelligence Artificielle Médicale",
+        category: "Santé & MedTech",
+        featured: true,
+        tag: "MedTech & IA Clinique",
+        description: "Dispositif MedTech d'urgence et de suivi clinique combinant cartes santé sans contact NFC et intelligence artificielle. FadjuGaw permet aux médecins et services de réanimation d'accéder instantanément au profil médical complet du patient (groupe sanguin, allergies, pathologies chroniques, chirurgies passées), même en zone blanche sans réseau Internet. La plateforme intègre un puissant copilote IA d'aide au diagnostic qui synthétise l'ensemble de l'historique médical pour suggérer des pistes cliniques fiables, alerter sur des interactions médicamenteuses à risque et accélérer la prise en charge vitale.",
+        image: nfc4care,
+        technologies: ["IA Médicale", "Aide au Diagnostic", "NFC (NTAG / Mifare)", "Flutter & Dart", "Spring Boot", "Sécurité Santé & JWT", "PostgreSQL", "Chiffrement AES-256"],
+        demoUrl: null,
+        githubUrl: null
+    },
+    {
         id: 2,
-        title: "Surveillance intelligente de pipelines de gaz de la petrosen",
-        description: "Développement d'une plateforme IoT intelligente pour le suivi d'un réseau de pipelines de gaz avec détection de fuites en temps réel via IA.",
+        title: "Surveillance Prédictive de Pipelines de Gaz (Petrosen)",
+        subtitle: "Plateforme Industrielle IoT & Machine Learning Temps Réel",
+        category: "IoT & Systèmes",
+        featured: true,
+        tag: "Industrie & Énergie",
+        description: "Solution critique d'ingénierie industrielle pour le réseau de transport gazier de Petrosen. Déploiement d'un maillage de capteurs IoT haute fréquence connectés à un moteur d'IA de détection prédictive d'anomalies et de fuites de pression en temps réel. Visualisation télémétrique instantanée, déclenchement d'alertes automatisées et maintenance préventive pour une sécurité énergétique optimale.",
         image: brainx,
-        technologies: ["IoT", "Python", "TensorFlow", "React", "InfluxDB"],
-        demoUrl: "#",
-        githubUrl: "#"
+        technologies: ["IoT Industriel", "Python", "TensorFlow", "React", "InfluxDB (Time-Series)", "MQTT", "Docker"],
+        demoUrl: null,
+        githubUrl: null
     },
     {
         id: 3,
-        title: "InternSense - Plateforme IA de gestion de stages",
-        description: "Système révolutionnaire de gestion de stages alimenté par l'IA avec analyse automatique des candidatures, interface conversationnelle et accompagnement personnalisé pour candidats et RH.",
-        image: internsense ,
-        technologies: ["Angular", "Spring Boot", "MySQL", "Salesforce Agentforce", "JWT", "OAuth 2.0"],
+        title: "InternSense – Écosystème RH Intelligent & Matching Prédictif",
+        subtitle: "Plateforme IA de Gestion des Recrutements & Talents",
+        category: "Intelligence Artificielle",
+        featured: true,
+        tag: "RH Tech & IA",
+        description: "Plateforme nouvelle génération automatisant le cycle de recrutement de stages grâce à l'IA. Parsing automatique et scoring sémantique de CVs, interface conversationnelle intelligente d'accompagnement des postulants et intégration CRM d'entreprise avec Salesforce Agentforce pour des prises de décision RH rapides et équitables.",
+        image: internsense,
+        technologies: ["Angular", "Spring Boot", "Salesforce Agentforce", "NLP & Matching Sémantique", "MySQL", "JWT & OAuth 2.0"],
         demoUrl: "https://www.youtube.com/watch?v=dBGEsJzx9iQ",
-        githubUrl: "#"
+        isVideoDemo: true,
+        githubUrl: null
     },
     {
         id: 4,
-        title: "Echo Code Detective - Jeu d'enquête procédural IA",
-        description: "Jeu de détective mystère où chaque enquête est générée dynamiquement par l'IA. Explorez un monde 2D, interrogez des PNJ avec des personnalités uniques et résolvez des mystères infinis.",
+        title: "Echo Code Detective – Jeu d'Enquête Procédurale & PNJ Autonomes",
+        subtitle: "Génération Dynamique de Mystères & PNJ pilotés par LLM",
+        category: "Intelligence Artificielle",
+        featured: false,
+        tag: "Game Tech & LLM",
+        description: "Expérience narrative interactive révolutionnaire où chaque scène de crime et mobile est généré dynamiquement par des modèles de langage avancés (Google Gemini). Les personnages non-joueurs (PNJ) possèdent une mémoire contextuelle, une psychologie vivante et adaptent leurs dépositions face aux interrogatoires du joueur.",
         image: echo_code,
-        technologies: ["React", "TypeScript", "Konva", "Google Gemini", "Pollination.ai", "Supabase"],
+        technologies: ["React", "TypeScript", "Konva (Canvas 2D)", "Google Gemini", "Pollination.ai", "Supabase"],
         demoUrl: "https://echo-code-detective.netlify.app",
         githubUrl: "https://github.com/killer-pro/echo-code-detective-quest"
     },
     {
         id: 5,
-        title: "DreamForge - Interpréteur de rêves IA",
-        description: "Application d'interprétation de rêves alimentée par l'IA utilisant l'API Sonar de Perplexity. Analyse les symboles, émotions et thèmes des rêves avec contexte culturel et génération d'images immersives.",
+        title: "DreamForge – Moteur d'Analyse Onirique Multimodale & Génération IA",
+        subtitle: "Exploration Cognitive & Interprétation Sémantique de Rêves",
+        category: "Intelligence Artificielle",
+        featured: false,
+        tag: "IA Cognitive",
+        description: "Application d'analyse symbolique et psychologique alimentée par l'API Sonar de Perplexity AI. Décodage approfondi des émotions, des métaphores culturelles et génération dynamique d'illustrations surréalistes immersives matérialisant les récits oniriques.",
         image: dreamforge,
-        technologies: ["React", "TypeScript", "Vite", "Sonar API", "Perplexity AI", "Tailwind CSS"],
+        technologies: ["React", "TypeScript", "Vite", "Sonar API (Perplexity)", "Génération d'images IA", "Tailwind CSS"],
         demoUrl: "https://dream-uwg8.onrender.com",
-        githubUrl: "#"
+        githubUrl: null
     },
     {
         id: 6,
-        title: "RepuPass – Authentification Web3 basée sur la réputation",
-        description: "RepuPass est un système d'authentification décentralisé exploitant les technologies Web3. Il permet de se connecter via un portefeuille crypto (ex: MetaMask) tout en s'appuyant sur un score de réputation pour sécuriser l'accès aux plateformes. Idéal pour les apps communautaires et décentralisées.",
+        title: "RepuPass – Passerelle d'Authentification Web3 Décentralisée",
+        subtitle: "Contrôle d'Accès On-Chain Fondé sur un Score de Réputation",
+        category: "Web3 & FinTech",
+        featured: false,
+        tag: "Web3 & Sécurité",
+        description: "Protocole de sécurité décentralisé permettant une connexion sécurisée par wallet crypto (MetaMask) conditionnée par un score de confiance et d'intégrité calculé sur la blockchain. Élimine les attaques Sybil et sécurise les DAOs et applications à forte valeur ajoutée.",
         image: repupass,
-        technologies: ["React", "TypeScript", "Tailwind CSS", "Vite", "Graphite", "MetaMask", "Ethers.js"],
-        demoUrl: "#", // Remplace par ton vrai lien si nécessaire
-        githubUrl: "https://github.com/kira9292/repupass-trust-gate" // Remplace par ton vrai repo
-
-    },
-
-    {
-        id: 7,
-        title: "Optimisation d'emploi du temps",
-        description: "Développement d'un système d'optimisation d'emplois du temps prenant en compte toutes les contraintes utilisateurs à l'aide d'algorithmes de graphes et de techniques d'ordonnancement.",
-        image: "https://emjpv36xdx4.exactdn.com/wp-content/uploads/2024/10/Emploi-du-temps-detude.jpg?strip=all&lossy=1&quality=83&sharp=1&ssl=1",
-        technologies: ["Python", "NetworkX", "React", "FastAPI"],
-        demoUrl: "#",
-        githubUrl: "#"
+        technologies: ["React", "TypeScript", "Ethers.js", "MetaMask", "Smart Contracts", "Tailwind CSS", "Vite"],
+        demoUrl: null,
+        githubUrl: "https://github.com/kira9292/repupass-trust-gate"
     },
     {
         id: 8,
-        title: "TrafficNFC – Système de contrôle routier intelligent par NFC",
-        description: "TrafficNFC est une application mobile de contrôle routier utilisant la technologie NFC pour identifier rapidement les véhicules et les conducteurs. Elle facilite la vérification des cartes de crise et aide à lutter contre la corruption routière grâce à une base de données centralisée et une interface intuitive.",
+        title: "TrafficNFC – Contrôle Routier Intelligent & Lutte Anti-Fraude",
+        subtitle: "Vérification Numérique Instantanée des Titres de Transport",
+        category: "IoT & Systèmes",
+        featured: false,
+        tag: "Mobile & Sécurité Publique",
+        description: "Système mobile pour les forces de l'ordre permettant l'authentification sans contact NFC des permis, cartes grises et attestations de crise. Centralisation instantanée des infractions, contrôle anti-corruption et synchronisation sécurisée avec les registres nationaux des transports.",
         image: trafficnfc,
-        technologies: ["Flutter", "Dart", "Spring Boot", "NFC", "MySQL", "REST API"],
-        demoUrl: "https://trafficnfc-demo.vercel.app", // remplace par ton vrai lien de démo
-        githubUrl: "https://github.com/ton-org/trafficnfc" // remplace par ton vrai repo
-
+        technologies: ["Flutter", "Dart", "Spring Boot", "NFC", "Architecture Microservices", "MySQL", "REST API"],
+        demoUrl: "https://trafficnfc-demo.vercel.app",
+        githubUrl: "https://github.com/ton-org/trafficnfc"
     },
-
-    {
-        id: 9,
-        title: "Environnement Jupyter Notebook en HTML",
-        description: "Création d'une application web qui simule l'environnement Jupyter Notebook, en interprétant du HTML pour afficher et exécuter dynamiquement du code dans une interface interactive.",
-        image: "https://www.esrf.fr/files/live/sites/www/files/UsersAndScience/Experiments/CRG/BM02/fromProfileChahine/data_analysis/Jupyter.PNG",
-        technologies: ["JavaScript", "React", "Monaco Editor", "WebAssembly"],
-        demoUrl: "#",
-        githubUrl: "#"
-    },
-    {
-        id: 10,
-        title: "Système IoT de surveillance de séchoirs solaires",
-        description: "Développement d'un dispositif de surveillance et de contrôle à distance d'un réseau de séchoirs solaires, basé sur l'IoT et le cloud.",
-        image: "https://www.shieldenchannel.com/cdn/shop/articles/solar-monitoring-systems-from-how-they-work-to-buying-guide-989992.jpg?v=1737592676&width=600",
-        technologies: ["IoT", "Python", "MQTT", "React", "InfluxDB"],
-        demoUrl: "#",
-        githubUrl: "#"
-    },
-    {
-        id: 11,
-        title: "Mini-jeux JavaScript",
-        description: "Programmation de plusieurs jeux classiques en JavaScript, notamment : Démineur, Dames, 2048 et Tic-Tac-Toe, en mettant l'accent sur l'interactivité, les animations et l'algorithmique.",
-        image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*QXUdmpRnVlfEn2ZuEfoiEw.png",
-        technologies: ["JavaScript", "HTML5 Canvas", "CSS3"],
-        demoUrl: "#",
-        githubUrl: "#"
-    },
-    {
-        id: 12,
-        title: "Plateforme de soumission de projets",
-        description: "Développement d'une application web permettant aux porteurs de projets de publier, vulgariser et partager leurs idées à l'échelle nationale.",
-        image: senproject ,
-        technologies: ["React", "Node.js", "MongoDB", "AWS"],
-        demoUrl: "#",
-        githubUrl: "#"
-    },
-    {
-        id: 13,
-        title: "Détection de sentiments sur les réseaux sociaux",
-        description: "Création d'une application de détection et de profilage des sentiments exprimés dans les commentaires des réseaux sociaux à l'aide de techniques de NLP et ML.",
-        image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
-        technologies: ["Python", "NLTK", "TensorFlow", "React", "FastAPI"],
-        demoUrl: "#",
-        githubUrl: "#"
-    },
-    {
-        id: 14,
-        title: "Application de transcodage numérique",
-        description: "Développement d'un outil de conversion efficace entre différentes bases numériques, incluant une interface simple et des explications pédagogiques.",
-        image: "https://images.pexels.com/photos/4709285/pexels-photo-4709285.jpeg",
-        technologies: ["JavaScript", "React", "MathJax"],
-        demoUrl: "#",
-        githubUrl: "#"
-    },
-    {
-        id: 15,
-        title: "Plateforme de streaming vidéo",
-        description: "Réalisation d'une plateforme de streaming vidéo, avec gestion des utilisateurs, encodage des vidéos, système de lecture optimisé et fonctionnalités communautaires.",
-        image: "https://images.pexels.com/photos/2510428/pexels-photo-2510428.jpeg",
-        technologies: ["React", "Node.js", "FFmpeg", "AWS S3", "MongoDB"],
-        demoUrl: "#",
-        githubUrl: "#"
-    },
-    {
-        id: 16,
-        title: "Prévision du prix des matériaux",
-        description: "Conception d'une application de prévision de l'évolution des prix des matières premières à l'aide de l'analyse de données historiques.",
-        image: "https://images.pexels.com/photos/159306/construction-site-build-construction-work-159306.jpeg",
-        technologies: ["Python", "Scikit-learn", "React", "FastAPI", "PostgreSQL"],
-        demoUrl: "#",
-        githubUrl: "#"
-    },
-    {
-        id: 17,
-        title: "Plateforme de recommandation d'ordinateurs (ML)",
-        description: "Création d'une application de traitement de données et de machine learning basée sur une base de données d'ordinateurs, permettant de recommander automatiquement la machine la plus adaptée et la moins chère selon les critères définis par l'utilisateur.",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_EhDQiNf0FTUdu8VBCgYBrcD-gr3BXeW5WQ&s",
-        technologies: ["Python", "TensorFlow", "React", "FastAPI", "PostgreSQL"],
-        demoUrl: "#",
-        githubUrl: "#"
-    },
-    {
-        id: 18,
-        title: "Application e-commerce complète",
-        description: "Développement d'une boutique en ligne pour produits électroniques couvrant l'ensemble du processus : gestion des stocks, panier, paiement sécurisé, et suivi des commandes.",
-        image: "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/259622089/original/20f7f0b51335b8f8ea8a278e55d2d6ca50d53a1e/build-e-commerce-application.jpg",
-        technologies: ["Django", "SQLite", "Bootstrap", "PayPal API"],
-        demoUrl: "#",
-        githubUrl: "#"
-    },  
     {
         id: 19,
-        title: "Boutique Hybride",
-        description: "Développement d'une solution innovante combinant vente physique et digitale, intégrant la génération de QR Codes pour chaque produit et un chatbot intelligent pour accompagner les clients, que ce soit en magasin ou en ligne.",
+        title: "Boutique Hybride – Commerce Phygital & Chatbot Conversationnel",
+        subtitle: "Convergence Vente Physique & Numérique par QR Dynamiques",
+        category: "Applications & Cloud",
+        featured: false,
+        tag: "Phygital & E-Commerce",
+        description: "Solution unifiée alliant magasin physique et boutique digitale. Génération automatique de QR Codes intelligents pour chaque produit en rayon et intégration d'un assistant conversationnel guidant les acheteurs en temps réel, garantissant une expérience d'achat omnicanale fluide.",
         image: bhybride,
-        technologies: ["React", "Node.js", "QR Code", "Chatbot", "MongoDB"],
+        technologies: ["React", "Node.js", "QR Code Engine", "Chatbot IA", "MongoDB", "Express"],
         demoUrl: "https://drive.google.com/file/d/1dkUHXjS9AAc2VLkMJlWcrP5Z6C6MvDQF/view?usp=sharing",
-        githubUrl: "#"
+        isVideoDemo: true,
+        githubUrl: null
+    },
+    {
+        id: 7,
+        title: "Ordonnancement Algorithmique d'Emplois du Temps Complexes",
+        subtitle: "Optimisation Mathématique sous Multi-Contraintes & Théorie des Graphes",
+        category: "Applications & Cloud",
+        featured: false,
+        tag: "Recherche Opérationnelle",
+        description: "Moteur de calcul mathématique d'optimisation d'affectation des ressources pédagogiques et professionnelles. Résolution de contraintes dures et souples via algorithmes de coloriage de graphes et programmation linéaire pour éliminer tout conflit d'horaire.",
+        image: "https://emjpv36xdx4.exactdn.com/wp-content/uploads/2024/10/Emploi-du-temps-detude.jpg?strip=all&lossy=1&quality=83&sharp=1&ssl=1",
+        technologies: ["Python", "NetworkX (Graphes)", "FastAPI", "Algorithmes Génétiques", "React"],
+        demoUrl: null,
+        githubUrl: null
     },
     {
         id: 20,
-        title: "Aide au Pré-diagnostic Médical",
-        description: "Mise en place d'un modèle de machine learning pour assister les professionnels de santé dans le pré-diagnostic médical, en analysant les symptômes et antécédents pour proposer des pistes de diagnostic.",
+        title: "Système Décisionnel Clinique de Pré-diagnostic Médical (ML)",
+        subtitle: "Apprentissage Supervisé pour la Détection Précoce de Pathologies",
+        category: "Santé & MedTech",
+        featured: false,
+        tag: "Santé & Machine Learning",
+        description: "Modèle prédictif de machine learning entraîné sur des jeux de données cliniques permettant d'orienter les soignants dès le triage initial. Analyse fine des symptômes et biomarqueurs pour estimer les probabilités diagnostiques avec un indice de confiance explicable.",
         image: medical,
-        technologies: ["Python", "Scikit-learn", "ML", "Streamlit"],
-        demoUrl: "#",
-        githubUrl: "#"
+        technologies: ["Python", "Scikit-learn", "Classification ML", "Streamlit", "Data Science"],
+        demoUrl: null,
+        githubUrl: null
     },
     {
         id: 21,
-        title: "Compression Audio",
-        description: "Développement d'un algorithme de compression audio innovant permettant de réduire la taille des fichiers tout en préservant la qualité sonore, idéal pour le streaming et le stockage efficace.",
+        title: "Moteur DSP de Compression Audio Haute Fidélité",
+        subtitle: "Traitement Numérique du Signal & Réduction Débit Temps Réel",
+        category: "IoT & Systèmes",
+        featured: false,
+        tag: "Traitement du Signal (DSP)",
+        description: "Algorithme novateur de compression acoustique réduisant l'empreinte mémoire des flux audio tout en préservant l'intelligibilité vocale et la clarté fréquentielle. Optimisé pour la transmission à bas débit sur canaux contraints et les architectures embarquées.",
         image: compression_audio,
-        technologies: ["Python", "DSP", "Audio Processing", "C++"],
-        demoUrl: "#",
-        githubUrl: "#"
+        technologies: ["Python", "C++", "DSP (Digital Signal Processing)", "Transformée de Fourier", "Audio Engineering"],
+        demoUrl: null,
+        githubUrl: null
     },
     {
         id: 22,
-        title: "Analyse du Sommeil (Analyse de données)",
-        description: "Étude approfondie des données de sommeil à l'aide de techniques d'analyse de données pour identifier les facteurs influençant la qualité du sommeil et proposer des recommandations personnalisées.",
+        title: "Analyse Prédictive des Cycles de Sommeil & Biomarqueurs",
+        subtitle: "Mining de Données Physiologiques & Recommandations Santé",
+        category: "Santé & MedTech",
+        featured: false,
+        tag: "Data Science & Santé",
+        description: "Traitement statistique et modélisation de signaux polysomnographiques visant à identifier les perturbateurs de repos et prédire les anomalies des cycles circadiens afin d'émettre des préconisations de récupération individualisées.",
         image: sommeil,
-        technologies: ["Python", "Pandas", "Data Analysis", "ML"],
-        demoUrl: "#",
-        githubUrl: "#"
+        technologies: ["Python", "Pandas", "NumPy", "Modélisation Statistique", "Machine Learning"],
+        demoUrl: null,
+        githubUrl: null
     },
     {
-        id: 23,
-        title: "NFC4Care – Carte de santé numérique via NFC",
-        description: "NFC4Care est une solution de santé numérique permettant de stocker et lire les informations médicales critiques via des cartes NFC. Elle permet aux professionnels de santé d'accéder rapidement à l’historique du patient, même hors ligne, améliorant ainsi la réactivité en situation d'urgence.",
-        image: nfc4care,
-        technologies: ["Flutter", "Dart", "Spring Boot", "NFC", "MySQL", "REST API", "JWT"],
-        demo: "", // remplace par ton vrai lien de démo
-        github: "" // remplace par ton vrai repo
-
+        id: 10,
+        title: "Télémétrie IoT & Contrôle Intelligent de Séchoirs Solaires",
+        subtitle: "Supervision Énergétique Agro-Industrielle par Cloud & MQTT",
+        category: "IoT & Systèmes",
+        featured: false,
+        tag: "IoT & Énergie Verte",
+        description: "Système de supervision thermique et hygrométrique en continu d'un parc de séchoirs solaires agricoles. Régulation dynamique à distance, journalisation en base temporelle et alertes pour préserver la qualité des denrées séchées.",
+        image: "https://www.shieldenchannel.com/cdn/shop/articles/solar-monitoring-systems-from-how-they-work-to-buying-guide-989992.jpg?v=1737592676&width=600",
+        technologies: ["IoT", "ESP32", "Protocole MQTT", "InfluxDB", "React Dashboard", "Python"],
+        demoUrl: null,
+        githubUrl: null
+    },
+    {
+        id: 13,
+        title: "Analyseur Sémantique de Sentiments & Veille d'Opinion (NLP)",
+        subtitle: "Traitement Automatique du Langage Naturel & Profilage de Communautés",
+        category: "Intelligence Artificielle",
+        featured: false,
+        tag: "NLP & Sentiment Analysis",
+        description: "Plateforme de veille réputationnelle analysant en continu les flux de commentaires des réseaux sociaux. Classification émotionnelle multilingue (positif, neutre, négatif) et détection de signaux faibles pour la gestion de crise de marque.",
+        image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
+        technologies: ["Python", "NLTK & Transformers", "TensorFlow", "FastAPI", "React"],
+        demoUrl: null,
+        githubUrl: null
+    },
+    {
+        id: 12,
+        title: "Plateforme Nationale de Valorisation de Projets d'Ingénierie",
+        subtitle: "Hub Collaboratif d'Innovation & Partage Technologique",
+        category: "Applications & Cloud",
+        featured: false,
+        tag: "Web & Plateforme",
+        description: "Plateforme centralisée permettant aux innovateurs, chercheurs et ingénieurs de publier, documenter et lever des fonds ou des partenariats pour des projets techniques à fort impact communautaire.",
+        image: senproject,
+        technologies: ["React", "Node.js", "MongoDB Atlas", "AWS S3", "Express"],
+        demoUrl: null,
+        githubUrl: null
     }
-
 ];
