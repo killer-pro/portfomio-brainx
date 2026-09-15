@@ -12,6 +12,7 @@ import repupass from "../assets/images/repupass.jpg";
 import trafficnfc from "../assets/images/trafficnfc.png";
 import nfc4care from "../assets/images/nfc4care.png";
 import tontooCover from "../assets/images/tontoo_cover.jpg";
+import senelecCover from "../assets/images/senelec_cover.jpg";
 
 export const projects = [
     {
@@ -33,6 +34,26 @@ export const projects = [
             { label: "Économie sur 3 ans", value: "272 M FCFA" },
             { label: "Fiabilité mesurée", value: "98.4%" },
             { label: "Latence moyenne", value: "4.1s" }
+        ]
+    },
+    {
+        id: 24,
+        title: "SENELEC – Plateforme d'Écoute Client Intelligente & Gestion Opérationnelle H24",
+        subtitle: "Écosystème Industriel Unifié (4 Applications & Assistant IA SENIA)",
+        category: "Intelligence Artificielle",
+        featured: true,
+        author: "Team Metal-X (Tech Lead: Mouhamadou Diouf CISSE)",
+        tag: "Projet Industriel SENELEC",
+        description: "Plateforme d'entreprise de bout en bout conçue pour la SENELEC, unifiant la gestion commerciale (réclamations clients, facturation, compteurs) et la distribution H24 (incidents réseau & dispatching cartographique temps réel). Issue de la victoire de MetalX au hackathon SENELEC et menée jusqu'à la livraison du MVP industriel prêt pour pilote, la solution orchestre 4 applications : App Mobile Client (déclaration et suivi d'interventions), App Mobile Agent Terrain (gestion des ordres de mission géolocalisés), Tableau de Bord Web unifié pour 9 rôles métier (déduplication automatique des pannes et suivi SLA), et l'Assistant IA multi-canal SENIA (RAG Weaviate, bilingue Français & Wolof, intégré sur Mobile, WhatsApp et Facebook). Cœur réactif haute performance développé en Java 21, Spring Boot, PostgreSQL/PostGIS, Redis et WebSockets.",
+        image: senelecCover,
+        technologies: ["Java 21 / Spring Boot", "Python / FastAPI", "Assistant IA SENIA (Wolof & FR)", "RAG (Weaviate)", "React & TypeScript", "React Native (Expo)", "PostgreSQL & PostGIS", "Redis & WebSockets", "Mapbox", "Docker"],
+        demoUrl: null,
+        githubUrl: null,
+        metrics: [
+            { label: "Applications", value: "4 Apps" },
+            { label: "Rôles Métier", value: "9 Profils" },
+            { label: "Supervision", value: "H24 / Temps Réel" },
+            { label: "Langues IA", value: "FR & Wolof" }
         ]
     },
     {

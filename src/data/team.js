@@ -7,35 +7,88 @@ export const teamMembers = [
     {
         id: 2,
         name: "Mouhamadou Diouf CISSE",
-        role: "Ingénieur Diplômé en Informatique et Télécommunications",
+        role: "Ingénieur de Conception (EPT) · Co-Fondateur & Tech Lead Team Metal-X",
         image: mouha,
         email: "mouhamadoudc@ept.sn",
+        phone: "+221 70 653 07 76",
         linkedin: "https://www.linkedin.com/in/mouhamadou-diouf-ciss%C3%A9-9303a12aa",
         github: "https://github.com/killer-pro",
-        bio: "Ingénieur diplômé de l'École Polytechnique de Thiès, spécialisé en Intelligence Artificielle Agentique (LLM), architectures réactives, Full-Stack, Cloud et systèmes IoT.",
+        bio: "Ingénieur de Conception diplômé de l'EPT (Promotion 2026), Co-fondateur & Tech Lead de Team Metal-X. Spécialiste en IA Agentique (LLMs, LangGraph), architectures réactives Full-Stack, Cybersécurité et Blockchain. 15 mois d'expérience chez Sonatel/Orange (thèse sur l'agent LLM Tontoo) et Tech Lead sur la plateforme industrielle SENELEC. Lauréat de 5 hackathons majeurs (Africa T-Awards 2026, JOJ 2026, SENELEC, SALTIS x2).",
         biography: [
-            "Mon parcours dans le monde de la technologie est guidé par une passion indéfectible pour la conception de systèmes intelligents et résilients. Diplômé de la prestigieuse École Polytechnique de Thiès, j'ai développé une expertise pointue à la croisée de l'intelligence artificielle, des algorithmes avancés et du génie logiciel.",
-            "Ce qui m'anime au quotidien, c'est de transformer des concepts théoriques de pointe en produits à fort impact économique et sociétal. Je conçois des architectures modernes capables de traiter des flux massifs de données tout en optimisant chaque milliseconde de latence.",
-            "Spécialiste de l'IA agentique et des modèles de langage de dernière génération (LLM), j'ai dirigé la conception et l'implémentation de Tontoo, l'assistant conversationnel multimodal et multicanal de la Sonatel pour 17 millions d'abonnés, alliant traitement de langues locales (Wolof natif), boucles ReAct et sécurité bancaire.",
-            "Mon expérience à la Sonatel en tant qu'ingénieur au sein de la Digital Factory m'a permis de déployer des solutions critiques en production sur OpenShift et de collaborer avec des équipes pluridisciplinaires de haut niveau."
+            "Ingénieur de Conception diplômé de l'École Polytechnique de Thiès (EPT), j'allie la rigueur scientifique polytechnicienne à une forte culture d'innovation et d'exécution technique en tant que co-fondateur et lead developer de Team Metal-X.",
+            "Spécialiste des modèles de langage de dernière génération (LLM) et des architectures agentiques réactives (LangGraph, boucles ReAct), j'ai dirigé la conception et la réalisation de Tontoo, l'assistant client IA multimodal et multicanal de la Sonatel pour 17 millions d'abonnés, alliant bilinguisme Wolof/Français souverain (ASR/TTS) et sécurité bancaire zero-knowledge.",
+            "En tant que Tech Lead auprès de la SENELEC pendant 10 mois, j'ai conduit l'équipe Metal-X de la victoire au hackathon jusqu'à la livraison complète du produit industriel : un écosystème unifié comprenant 4 applications interconnectées en temps réel, un moteur réactif Java 21 / Spring Boot PostGIS, et l'assistant IA SENIA.",
+            "Mon palmarès compte 5 victoires majeures en compétitions d'innovation technologique : 1er Prix JOJ Innovation Challenge 2026 (DAKAR FLOW), 1er Prix Africa T-Awards 2026 (SecureIDChain / CareLink), 1er Prix Hackathon SENELEC, 1er Prix SALTIS 2024 et 3e Prix SALTIS 2025.",
+            "Fortement engagé dans la communauté polytechnicienne, j'ai présidé le Club Informatique de l'EPT (équipe de 10 personnes, organisation de l'IT Day EPT, développement de la PolyApp officielle) et défilé pour l'EPT lors du Défilé National du 4 avril 2025 (1er Prix civil)."
         ],
-        skills: ["LangGraph & LLM", "Python", "FastAPI", "Java / Spring Boot", "React", "Docker / OpenShift", "PostgreSQL & pgvector", "Cloud Computing", "IoT & Réseaux"],
+        skills: [
+            "LangGraph & LLM Agents (Gemini, Llama, Claude)",
+            "Java 21 / Spring Boot 3",
+            "Python / FastAPI",
+            "React 18 & TypeScript",
+            "React Native / Expo",
+            "Hyperledger Besu & Solidity",
+            "PostgreSQL & PostGIS",
+            "Docker & RunPod",
+            "Apache Spark & Streaming",
+            "ASR & TTS Wolof",
+            "Redis & Weaviate (RAG)",
+            "Cybersécurité & JWT/2FA"
+        ],
         experience: [
             {
-                role: "Ingénieur Stagiaire PFE & Développeur Full Stack / IA",
-                company: "Sonatel (Direction Innovation & DSI)",
-                period: "Août 2024 - Présent",
-                description: "Conception et déploiement de l'agent conversationnel multicanal Tontoo (FastAPI, LangGraph, Gemini 3.1, ASR/TTS Wolof, OpenShift), génération d'économies stratégiques de plus de 270 M FCFA."
+                role: "Stage Ingénieur — LLM Multicanal (Thèse PFE)",
+                company: "Sonatel / Orange",
+                period: "Fév. 2026 – Août 2026 (6 mois)",
+                description: "Conception et réalisation de l'agent conversationnel multicanal LLM Tontoo pour 17M d'abonnés. Refactorisation vers LangGraph pour la gestion d'état et de transitions, modèle vocal ASR/TTS Wolof/Français hébergé sur RunPod, conteneurisation Docker et soutenance de thèse avec mention."
+            },
+            {
+                role: "Tech Lead — Solution d'Écoute Client Intelligente",
+                company: "SENELEC & Team Metal-X",
+                period: "Nov. 2024 – Août 2025 (10 mois)",
+                description: "Direction technique de l'équipe Metal-X de la victoire au hackathon jusqu'à la livraison du MVP industriel prêt pour pilote : 4 applications (App Client mobile, App Agent terrain, Dashboard web 9 rôles, Assistant IA SENIA), coordination Ventes, Distribution, RH et Exécution."
+            },
+            {
+                role: "Stage Ingénieur — Gisele & Chatbot LLM",
+                company: "Sonatel / Orange",
+                period: "Juil. 2025 – Nov. 2025 (5 mois)",
+                description: "Maintenance et correction de bugs sur l'application interne, intégration de Gisele avec partitionnement par pays, pivotage vers le chatbot multicanal et stabilisation des flux conversationnels avec Redis et prompt engineering."
+            },
+            {
+                role: "Stage Ingénieur — App Service Client",
+                company: "Sonatel / Orange",
+                period: "Août 2024 – Nov. 2024 (4 mois)",
+                description: "Conception d'un outil de base de connaissances pour centre d'appels, module d'évaluation des performances des agents et suivi des KPIs, flux de gestion des réclamations."
             }
         ],
         education: [
             {
                 degree: "Diplôme d'Ingénieur de Conception (DIC) en Informatique et Télécommunications",
                 school: "École Polytechnique de Thiès (EPT)",
-                period: "2021 - 2026",
-                description: "Formation d'élite en génie logiciel, intelligence artificielle, sécurité des systèmes, IoT et réseaux télécoms. Mémoire de fin d'études axé sur les architectures agentiques LLM pour les télécoms."
+                period: "2021 – 2026",
+                description: "Formation polytechnicienne d'élite. Spécialisations en intelligence artificielle, cybersécurité, systèmes distribués, blockchain et réseaux. Thèse de fin d'études soutenue avec succès en 2026 sur les agents conversationnels LLM."
             }
         ],
+        leadership: [
+            {
+                role: "Président",
+                org: "Club Informatique Polytech (EPT)",
+                period: "Oct. 2023 – Juil. 2024",
+                description: "Management d'une équipe de 10 personnes, organisation de l'IT Day EPT (conférences, séminaires, tables rondes), développement de l'application officielle PolyApp (Flutter/Firebase)."
+            },
+            {
+                role: "Support IT",
+                org: "Forum Innovation International (FII Dakar)",
+                period: "2025",
+                description: "Support technique et administration de l'infrastructure IT lors du forum international."
+            },
+            {
+                role: "Délégation EPT",
+                org: "Défilé National du 4 Avril",
+                period: "Avril 2025",
+                description: "Défilé au sein de la délégation officielle de l'EPT, lauréate du 1er Prix civil national."
+            }
+        ]
     },
     {
         id: 3,
