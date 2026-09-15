@@ -39,22 +39,19 @@ function Navbar() {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-white/85 border-b border-gray-200/70 shadow-sm transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          
+
           {/* Logo Brand */}
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md shadow-indigo-100 border border-indigo-100 group-hover:scale-105 transition-transform duration-200">
-              <img 
-                src={metalxLogo} 
-                alt="MetalX Emblem" 
+              <img
+                src={metalxLogo}
+                alt="MetalX Emblem"
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="flex flex-col">
               <span className="text-2xl font-extrabold bg-gradient-to-r from-indigo-600 via-indigo-700 to-purple-600 bg-clip-text text-transparent tracking-tight">
                 MetalX
-              </span>
-              <span className="text-[10px] uppercase font-bold tracking-widest text-gray-500">
-                Ingénieurs EPT
               </span>
             </div>
           </Link>
@@ -69,11 +66,10 @@ function Navbar() {
                   key={link.name}
                   to={link.path}
                   onClick={(e) => handleLinkClick(e, link.path)}
-                  className={`flex items-center space-x-2 px-4 lg:px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
-                    active
-                      ? 'bg-white text-indigo-600 shadow-sm'
-                      : 'text-gray-600 hover:text-indigo-600 hover:bg-white/60'
-                  }`}
+                  className={`flex items-center space-x-2 px-4 lg:px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${active
+                    ? 'bg-white text-indigo-600 shadow-sm'
+                    : 'text-gray-600 hover:text-indigo-600 hover:bg-white/60'
+                    }`}
                 >
                   <Icon className={`text-xs ${active ? 'text-indigo-600' : 'text-gray-400'}`} />
                   <span>{link.name}</span>
@@ -118,11 +114,10 @@ function Navbar() {
                   key={link.name}
                   to={link.path}
                   onClick={(e) => handleLinkClick(e, link.path)}
-                  className={`flex items-center space-x-3 px-4 py-3 rounded-xl text-base font-semibold transition-colors ${
-                    active
-                      ? 'bg-indigo-50 text-indigo-600 font-bold'
-                      : 'text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
-                  }`}
+                  className={`flex items-center space-x-3 px-4 py-3 rounded-xl text-base font-semibold transition-colors ${active
+                    ? 'bg-indigo-50 text-indigo-600 font-bold'
+                    : 'text-gray-700 hover:bg-gray-50 hover:text-indigo-600'
+                    }`}
                 >
                   <Icon className={`text-base ${active ? 'text-indigo-600' : 'text-gray-400'}`} />
                   <span>{link.name}</span>

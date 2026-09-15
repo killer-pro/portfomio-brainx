@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import metalxLogo from '../assets/images/metalx.jpg';
@@ -39,7 +39,7 @@ function Home() {
 
   return (
     <div className="bg-gradient-to-b from-slate-50 via-indigo-50/20 to-white relative overflow-hidden min-h-screen">
-      
+
       {/* Ambient background lighting */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-100/40 rounded-full blur-3xl pointer-events-none -z-10" />
       <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl pointer-events-none -z-10" />
@@ -47,7 +47,7 @@ function Home() {
       {/* Hero Section */}
       <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-14 lg:pt-16 lg:pb-20 flex items-center min-h-[calc(100vh-6rem)]">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center w-full">
-          
+
           {/* Left Column: Headline, Typewriter, Description & CTAs */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -73,9 +73,9 @@ function Home() {
 
             {/* Natural, professional pitch */}
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl font-normal mx-auto lg:mx-0">
-              Pôle d'ingénieurs diplômés d'élite en informatique et télécommunications. 
-              Nous concevons des architectures d'<strong>IA agentique (LLM)</strong>, des 
-              systèmes distribués haute résilience, des dispositifs <strong>IoT industriels</strong> et des plateformes MedTech sécurisées pour des acteurs de référence comme la <strong>Sonatel</strong> et <strong>Petrosen</strong>.
+              Pôle d'ingénieurs diplômés d'élite en informatique et télécommunications.
+              Nous concevons des architectures d'<strong>IA agentique (LLM)</strong>, des
+              systèmes distribués haute résilience, des dispositifs <strong>IoT industriels</strong> et des plateformes MedTech sécurisées pour des acteurs de référence comme la <strong>Sonatel Digital Center</strong> et <strong>Petrosen</strong>,<strong>Senelec</strong>,<strong>Fii senegal</strong>.
             </p>
 
             {/* Action Buttons: Centered on small/medium, left-aligned on large */}
@@ -181,7 +181,7 @@ function Home() {
       {/* Distinctions & Awards Section */}
       <section id="distinctions" className="py-16 sm:py-20 bg-slate-50 border-t border-slate-200/70">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <div className="text-center max-w-3xl mx-auto mb-12">
             <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider mb-3">
               <FaTrophy className="text-amber-600 text-xs" />
@@ -206,30 +206,23 @@ function Home() {
                   <div>
                     {/* Award Image if available */}
                     {award.image && (
-                      <div className="relative aspect-[16/10] overflow-hidden bg-slate-900">
+                      <div className="relative aspect-[16/10] overflow-hidden bg-slate-900 border-b border-slate-100">
                         <img
                           src={award.image}
                           alt={award.title}
                           className={`w-full h-full object-cover ${award.imagePosition || 'object-center'} group-hover:scale-105 transition-transform duration-500`}
                           loading="lazy"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent"></div>
-                        {award.prize && (
-                          <div className="absolute bottom-3 left-3 bg-emerald-600/95 text-white px-3 py-1 rounded-full text-xs font-black shadow-lg flex items-center space-x-1.5 border border-emerald-400/30 backdrop-blur-sm">
-                            <span>🏆 {award.prize.includes("FCFA") ? `Chèque : ${award.prize}` : award.prize}</span>
-                          </div>
-                        )}
                       </div>
                     )}
 
                     <div className="p-6 sm:p-7 pb-0">
                       {/* Top Row: Rank Badge & Year */}
                       <div className="flex items-center justify-between mb-4">
-                        <span className={`inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide ${
-                          isFirst
-                            ? 'bg-amber-100 text-amber-900 border border-amber-300'
-                            : 'bg-orange-100 text-orange-900 border border-orange-300'
-                        }`}>
+                        <span className={`inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide ${isFirst
+                          ? 'bg-amber-100 text-amber-900 border border-amber-300'
+                          : 'bg-orange-100 text-orange-900 border border-orange-300'
+                          }`}>
                           <FaMedal className={isFirst ? 'text-amber-600' : 'text-orange-600'} />
                           <span>{award.rank}</span>
                         </span>
