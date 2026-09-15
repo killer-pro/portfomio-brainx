@@ -15,6 +15,7 @@ import tontooCover from "../assets/images/tontoo_cover.jpg";
 import senelecCover from "../assets/images/senelec_cover.jpg";
 import dakarflowCover from "../assets/images/dakarflow_cover.jpg";
 import fadjugawCover from "../assets/images/fadjugaw_cover.jpg";
+import petrosenCover from "../assets/images/petrosen_pipeline_cover.jpg";
 
 export const projects = [
     {
@@ -106,7 +107,7 @@ export const projects = [
         featured: true,
         tag: "Industrie & Énergie",
         description: "Solution critique d'ingénierie industrielle pour le réseau de transport gazier de Petrosen. Déploiement d'un maillage de capteurs IoT haute fréquence connectés à un moteur d'IA de détection prédictive d'anomalies et de fuites de pression en temps réel. Visualisation télémétrique instantanée, déclenchement d'alertes automatisées et maintenance préventive pour une sécurité énergétique optimale.",
-        image: brainx,
+        image: petrosenCover,
         technologies: ["IoT Industriel", "Python", "TensorFlow", "React", "InfluxDB (Time-Series)", "MQTT", "Docker"],
         demoUrl: null,
         githubUrl: null

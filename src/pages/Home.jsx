@@ -210,13 +210,13 @@ function Home() {
                         <img
                           src={award.image}
                           alt={award.title}
-                          className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                          className={`w-full h-full object-cover ${award.imagePosition || 'object-center'} group-hover:scale-105 transition-transform duration-500`}
                           loading="lazy"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent"></div>
                         {award.prize && (
                           <div className="absolute bottom-3 left-3 bg-emerald-600/95 text-white px-3 py-1 rounded-full text-xs font-black shadow-lg flex items-center space-x-1.5 border border-emerald-400/30 backdrop-blur-sm">
-                            <span>🏆 Chèque Gagnant : {award.prize}</span>
+                            <span>🏆 {award.prize.includes("FCFA") ? `Chèque : ${award.prize}` : award.prize}</span>
                           </div>
                         )}
                       </div>
