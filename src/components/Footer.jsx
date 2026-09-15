@@ -36,6 +36,11 @@ function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/#distinctions" className="text-base text-gray-500 hover:text-gray-900">
+                  Distinctions
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="text-base text-gray-500 hover:text-gray-900">
                   Contact
                 </Link>
@@ -74,7 +79,7 @@ function Footer() {
         </div>
         <div className="mt-8 border-t border-gray-200 pt-8">
           <p className="text-base text-gray-400 text-center">
-            © {new Date().getFullYear()} BrainX. All rights reserved.
+            © {new Date().getFullYear()} MetalX. All rights reserved.
           </p>
         </div>
       </div>

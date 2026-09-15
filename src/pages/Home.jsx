@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import metalxLogo from '../assets/images/metalx.jpg';
-import { FaRocket, FaUsers, FaCheckCircle, FaBrain, FaShieldAlt, FaServer, FaArrowRight } from 'react-icons/fa';
+import { FaRocket, FaUsers, FaArrowRight, FaTrophy, FaMedal, FaCalendarAlt } from 'react-icons/fa';
 import { projects } from '../data/projects';
+import { awards } from '../data/awards';
 
 const sloganList = [
   "L'intelligence artificielle au service de solutions concrètes.",
@@ -39,32 +40,23 @@ function Home() {
   return (
     <div className="bg-gradient-to-b from-slate-50 via-indigo-50/20 to-white relative overflow-hidden min-h-screen">
       
-      {/* Background ambient lighting effects */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-200/30 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse" />
-      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-purple-200/25 rounded-full blur-3xl pointer-events-none -z-10" />
+      {/* Ambient background lighting */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-100/40 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-purple-100/30 rounded-full blur-3xl pointer-events-none -z-10" />
 
-      {/* Hero Section: perfectly calibrated to fit above the fold */}
-      <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 lg:pt-12 lg:pb-16 flex items-center min-h-[calc(100vh-6rem)]">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center w-full">
+      {/* Hero Section */}
+      <section className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-14 lg:pt-16 lg:pb-20 flex items-center min-h-[calc(100vh-6rem)]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center w-full">
           
-          {/* Left Column: Value Proposition & CTAs */}
+          {/* Left Column: Headline, Typewriter, Description & CTAs */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
-            className="lg:col-span-7 text-left space-y-6"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6"
           >
-            {/* Tag / Eyebrow */}
-            <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-indigo-100/80 border border-indigo-200 text-indigo-800 text-xs sm:text-sm font-semibold shadow-sm">
-              <span className="flex h-2 w-2 relative">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-600"></span>
-              </span>
-              <span>Ingénieurs Diplômés de l'École Polytechnique de Thiès</span>
-            </div>
-
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.12]">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.15]">
               L'Ingénierie de Pointe avec{' '}
               <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
                 MetalX
@@ -72,22 +64,22 @@ function Home() {
             </h1>
 
             {/* Dynamic Typewriter Slogan */}
-            <div className="min-h-[3rem] flex items-center">
-              <p className="text-lg sm:text-xl font-mono font-medium text-indigo-700 bg-indigo-50/80 px-3 py-1.5 rounded-lg border-l-4 border-indigo-600 shadow-sm inline-block">
+            <div className="min-h-[2.75rem] flex items-center justify-center lg:justify-start w-full">
+              <p className="text-base sm:text-lg font-mono font-medium text-indigo-700 bg-indigo-50/90 px-3.5 py-1.5 rounded-lg border-l-4 border-indigo-600 shadow-sm inline-block">
                 {displayed}
                 <span className="inline-block w-2 bg-indigo-600 ml-1 animate-pulse">|</span>
               </p>
             </div>
 
-            {/* Professional Description */}
-            <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl font-normal">
+            {/* Natural, professional pitch */}
+            <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl font-normal mx-auto lg:mx-0">
               Pôle d'ingénieurs diplômés d'élite en informatique et télécommunications. 
               Nous concevons des architectures d'<strong>IA agentique (LLM)</strong>, des 
-              systèmes distribués haute résilience, des dispositifs <strong>IoT industriels</strong> et des plateformes MedTech sécurisées pour des leaders comme la <strong>Sonatel</strong> et <strong>Petrosen</strong>.
+              systèmes distribués haute résilience, des dispositifs <strong>IoT industriels</strong> et des plateformes MedTech sécurisées pour des acteurs de référence comme la <strong>Sonatel</strong> et <strong>Petrosen</strong>.
             </p>
 
-            {/* Action Buttons */}
-            <div className="pt-2 flex flex-wrap gap-4 items-center">
+            {/* Action Buttons: Centered on small/medium, left-aligned on large */}
+            <div className="pt-2 flex flex-wrap gap-4 items-center justify-center lg:justify-start w-full">
               <Link
                 to="/projects"
                 className="inline-flex items-center space-x-2 px-7 py-3.5 rounded-xl font-bold text-white bg-gradient-to-r from-indigo-600 via-indigo-700 to-purple-600 hover:from-indigo-700 hover:to-purple-700 shadow-lg shadow-indigo-200 hover:shadow-indigo-300 transition-all duration-200 transform hover:-translate-y-0.5"
@@ -104,72 +96,22 @@ function Home() {
                 <span>Découvrir l'Équipe</span>
               </Link>
             </div>
-
-            {/* Quick Metrics Bar */}
-            <div className="pt-4 grid grid-cols-3 gap-4 border-t border-slate-200/80 max-w-lg">
-              <div>
-                <div className="text-2xl font-black text-indigo-600">100%</div>
-                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Ingénieurs EPT</div>
-              </div>
-              <div>
-                <div className="text-2xl font-black text-indigo-600">12+</div>
-                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Projets Réalisés</div>
-              </div>
-              <div>
-                <div className="text-2xl font-black text-indigo-600">98.4%</div>
-                <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Fiabilité IA</div>
-              </div>
-            </div>
           </motion.div>
 
-          {/* Right Column: Perfectly Calibrated Logo & Visual Identity */}
+          {/* Right Column: Clean & Perfectly Framed Logo */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="lg:col-span-5 flex justify-center relative"
+            transition={{ duration: 0.7, delay: 0.15 }}
+            className="lg:col-span-5 flex justify-center items-center w-full"
           >
-            {/* Ambient Backlight */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 rounded-3xl filter blur-2xl transform scale-105 -z-10" />
-
-            {/* Main Logo Card */}
-            <div className="w-full max-w-sm sm:max-w-md bg-white/80 backdrop-blur-xl border border-white/80 shadow-2xl rounded-3xl p-6 relative overflow-visible">
-              
-              {/* Floating Pill Badges */}
-              <div className="absolute -top-3 -left-3 bg-white/95 border border-indigo-100 shadow-md px-3 py-1.5 rounded-full flex items-center space-x-1.5 text-xs font-bold text-indigo-700 animate-bounce">
-                <FaBrain className="text-indigo-600" />
-                <span>Agentic AI & LLMs</span>
-              </div>
-
-              <div className="absolute -bottom-3 -right-3 bg-white/95 border border-purple-100 shadow-md px-3 py-1.5 rounded-full flex items-center space-x-1.5 text-xs font-bold text-purple-700">
-                <FaShieldAlt className="text-purple-600" />
-                <span>Sécurité & FinTech</span>
-              </div>
-
-              {/* Logo Frame */}
-              <div className="relative rounded-2xl overflow-hidden border border-slate-100 shadow-inner group">
+            <div className="w-full max-w-xs sm:max-w-sm md:max-w-md bg-white border border-slate-200/80 shadow-xl rounded-2xl p-4 sm:p-5 transition-transform duration-300 hover:shadow-2xl">
+              <div className="rounded-xl overflow-hidden border border-slate-100 shadow-inner">
                 <img
                   src={metalxLogo}
-                  alt="MetalX Engineering & IT Services"
-                  className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500"
+                  alt="MetalX Emblem"
+                  className="w-full h-auto object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent opacity-80" />
-                <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <div className="text-xs uppercase tracking-widest text-indigo-300 font-bold">Cabinet d'Ingénierie</div>
-                  <div className="text-lg font-black tracking-tight">MetalX IT Solutions</div>
-                </div>
-              </div>
-
-              {/* Mini highlights under logo */}
-              <div className="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-medium">
-                <span className="flex items-center space-x-1">
-                  <FaCheckCircle className="text-emerald-500" />
-                  <span>Diplôme d'Ingénieur DIC</span>
-                </span>
-                <span className="flex items-center space-x-1">
-                  <FaServer className="text-indigo-500" />
-                  <span>Haute Disponibilité</span>
-                </span>
               </div>
             </div>
           </motion.div>
@@ -180,7 +122,7 @@ function Home() {
       {/* Featured Projects Highlight Strip */}
       <section className="bg-white py-16 border-t border-slate-200/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-10">
+          <div className="flex flex-col sm:flex-row items-center sm:items-center justify-between mb-10 text-center sm:text-left">
             <div>
               <span className="text-xs font-bold tracking-widest text-indigo-600 uppercase">Innovations Majeures</span>
               <h2 className="text-2xl sm:text-3xl font-black text-slate-900">Nos Projets d'Impact Stratégique</h2>
@@ -233,6 +175,85 @@ function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Distinctions & Awards Section */}
+      <section id="distinctions" className="py-16 sm:py-20 bg-slate-50 border-t border-slate-200/70">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-wider mb-3">
+              <FaTrophy className="text-amber-600 text-xs" />
+              <span>Palmarès & Récompenses</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+              Distinctions & Prix d'Excellence
+            </h2>
+            <p className="mt-3 text-slate-600 text-base sm:text-lg leading-relaxed">
+              Les innovations conçues par la <strong>Team Metal-X</strong> récompensées lors des hackathons et compétitions technologiques d'envergure.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            {awards.map((award) => {
+              const isFirst = award.rank.includes("1");
+              return (
+                <div
+                  key={award.id}
+                  className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                >
+                  <div>
+                    {/* Top Row: Rank Badge & Year */}
+                    <div className="flex items-center justify-between mb-4">
+                      <span className={`inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide ${
+                        isFirst
+                          ? 'bg-amber-100 text-amber-900 border border-amber-300'
+                          : 'bg-orange-100 text-orange-900 border border-orange-300'
+                      }`}>
+                        <FaMedal className={isFirst ? 'text-amber-600' : 'text-orange-600'} />
+                        <span>{award.rank}</span>
+                      </span>
+
+                      <span className="text-xs font-bold text-slate-500 flex items-center space-x-1">
+                        <FaCalendarAlt className="text-slate-400 text-[10px]" />
+                        <span>{award.period}</span>
+                      </span>
+                    </div>
+
+                    {/* Competition Name */}
+                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors leading-snug">
+                      {award.title}
+                    </h3>
+
+                    {/* Project & Category Pills */}
+                    <div className="flex flex-wrap gap-1.5 mb-3">
+                      <span className="px-2.5 py-0.5 rounded-md bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                        {award.category}
+                      </span>
+                      {award.project && (
+                        <span className="px-2.5 py-0.5 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">
+                          {award.project}
+                        </span>
+                      )}
+                    </div>
+
+                    {/* Description */}
+                    <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                      {award.description}
+                    </p>
+                  </div>
+
+                  {/* Footer card */}
+                  <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-500">
+                    <span className="text-indigo-600 font-semibold">{award.team}</span>
+                    <span className="text-[11px] text-slate-400 font-semibold uppercase tracking-wider">Officiel</span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
         </div>
       </section>
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaBars, FaTimes, FaRocket, FaCode, FaUsers, FaEnvelope, FaHome } from 'react-icons/fa';
+import { FaBars, FaTimes, FaRocket, FaCode, FaUsers, FaEnvelope, FaHome, FaTrophy } from 'react-icons/fa';
 import metalxLogo from '../assets/images/metalx.jpg';
 
 function Navbar() {
@@ -10,12 +10,28 @@ function Navbar() {
   const navLinks = [
     { name: 'Accueil', path: '/', icon: FaHome },
     { name: 'Projets', path: '/projects', icon: FaCode },
+    { name: 'Distinctions', path: '/#distinctions', icon: FaTrophy },
     { name: 'Équipe', path: '/team', icon: FaUsers },
     { name: 'Contact', path: '/contact', icon: FaEnvelope },
   ];
 
+  const handleLinkClick = (e, path) => {
+    if (path.startsWith('/#')) {
+      const id = path.replace('/#', '');
+      if (location.pathname === '/') {
+        e.preventDefault();
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }
+    setIsOpen(false);
+  };
+
   const isActive = (path) => {
-    if (path === '/') return location.pathname === '/';
+    if (path === '/') return location.pathname === '/' && !location.hash;
+    if (path.startsWith('/#')) return location.hash === path.replace('/', '');
     return location.pathname.startsWith(path);
   };
 
@@ -52,7 +68,8 @@ function Navbar() {
                 <Link
                   key={link.name}
                   to={link.path}
-                  className={`flex items-center space-x-2 px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
+                  onClick={(e) => handleLinkClick(e, link.path)}
+                  className={`flex items-center space-x-2 px-4 lg:px-5 py-2 rounded-full text-sm font-semibold transition-all duration-200 ${
                     active
                       ? 'bg-white text-indigo-600 shadow-sm'
                       : 'text-gray-600 hover:text-indigo-600 hover:bg-white/60'
@@ -100,7 +117,7 @@ function Navbar() {
                 <Link
                   key={link.name}
                   to={link.path}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => handleLinkClick(e, link.path)}
                   className={`flex items-center space-x-3 px-4 py-3 rounded-xl text-base font-semibold transition-colors ${
                     active
                       ? 'bg-indigo-50 text-indigo-600 font-bold'
