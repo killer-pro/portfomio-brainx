@@ -22,8 +22,8 @@ function Portfolio() {
     );
   }
 
-  // Find featured projects for Mouhamadou Diouf CISSE (Tontoo & SENELEC)
-  const flagshipProjects = member.id === 2 ? projects.filter(p => p.id === 1 || p.id === 24) : [];
+  // Find featured projects for Mouhamadou Diouf CISSE (Tontoo, DakarFlow & SENELEC)
+  const flagshipProjects = member.id === 2 ? projects.filter(p => p.id === 1 || p.id === 24 || p.id === 25) : [];
 
   return (
     <div className="bg-slate-50 min-h-screen py-12">

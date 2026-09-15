@@ -201,51 +201,71 @@ function Home() {
               return (
                 <div
                   key={award.id}
-                  className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+                  className="bg-white rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group overflow-hidden"
                 >
                   <div>
-                    {/* Top Row: Rank Badge & Year */}
-                    <div className="flex items-center justify-between mb-4">
-                      <span className={`inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide ${
-                        isFirst
-                          ? 'bg-amber-100 text-amber-900 border border-amber-300'
-                          : 'bg-orange-100 text-orange-900 border border-orange-300'
-                      }`}>
-                        <FaMedal className={isFirst ? 'text-amber-600' : 'text-orange-600'} />
-                        <span>{award.rank}</span>
-                      </span>
+                    {/* Award Image if available */}
+                    {award.image && (
+                      <div className="relative aspect-[16/10] overflow-hidden bg-slate-900">
+                        <img
+                          src={award.image}
+                          alt={award.title}
+                          className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent"></div>
+                        {award.prize && (
+                          <div className="absolute bottom-3 left-3 bg-emerald-600/95 text-white px-3 py-1 rounded-full text-xs font-black shadow-lg flex items-center space-x-1.5 border border-emerald-400/30 backdrop-blur-sm">
+                            <span>🏆 Chèque Gagnant : {award.prize}</span>
+                          </div>
+                        )}
+                      </div>
+                    )}
 
-                      <span className="text-xs font-bold text-slate-500 flex items-center space-x-1">
-                        <FaCalendarAlt className="text-slate-400 text-[10px]" />
-                        <span>{award.period}</span>
-                      </span>
-                    </div>
-
-                    {/* Competition Name */}
-                    <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors leading-snug">
-                      {award.title}
-                    </h3>
-
-                    {/* Project & Category Pills */}
-                    <div className="flex flex-wrap gap-1.5 mb-3">
-                      <span className="px-2.5 py-0.5 rounded-md bg-indigo-50 text-indigo-700 text-xs font-semibold">
-                        {award.category}
-                      </span>
-                      {award.project && (
-                        <span className="px-2.5 py-0.5 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">
-                          {award.project}
+                    <div className="p-6 sm:p-7 pb-0">
+                      {/* Top Row: Rank Badge & Year */}
+                      <div className="flex items-center justify-between mb-4">
+                        <span className={`inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-black tracking-wide ${
+                          isFirst
+                            ? 'bg-amber-100 text-amber-900 border border-amber-300'
+                            : 'bg-orange-100 text-orange-900 border border-orange-300'
+                        }`}>
+                          <FaMedal className={isFirst ? 'text-amber-600' : 'text-orange-600'} />
+                          <span>{award.rank}</span>
                         </span>
-                      )}
-                    </div>
 
-                    {/* Description */}
-                    <p className="text-slate-600 text-sm leading-relaxed mb-4">
-                      {award.description}
-                    </p>
+                        <span className="text-xs font-bold text-slate-500 flex items-center space-x-1">
+                          <FaCalendarAlt className="text-slate-400 text-[10px]" />
+                          <span>{award.period}</span>
+                        </span>
+                      </div>
+
+                      {/* Competition Name */}
+                      <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors leading-snug">
+                        {award.title}
+                      </h3>
+
+                      {/* Project & Category Pills */}
+                      <div className="flex flex-wrap gap-1.5 mb-3">
+                        <span className="px-2.5 py-0.5 rounded-md bg-indigo-50 text-indigo-700 text-xs font-semibold">
+                          {award.category}
+                        </span>
+                        {award.project && (
+                          <span className="px-2.5 py-0.5 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">
+                            {award.project}
+                          </span>
+                        )}
+                      </div>
+
+                      {/* Description */}
+                      <p className="text-slate-600 text-sm leading-relaxed mb-4">
+                        {award.description}
+                      </p>
+                    </div>
                   </div>
 
                   {/* Footer card */}
-                  <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-500">
+                  <div className="p-6 sm:p-7 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-slate-500">
                     <span className="text-indigo-600 font-semibold">{award.team}</span>
                     <span className="text-[11px] text-slate-400 font-semibold uppercase tracking-wider">Officiel</span>
                   </div>

@@ -1,16 +1,19 @@
+import awardJoj from "../assets/images/award_joj_2026.jpg";
+
 export const awards = [
   {
     id: 1,
     rank: "1er Prix",
     rankEn: "1st Prize",
-    title: "JOJ Innovation Challenge Hackathon 2026",
+    title: "Hackathon JOJ Dakar 2026",
     category: "Smart Urban Mobility",
     project: "DAKAR FLOW",
     period: "Avril 2026",
+    prize: "1 500 000 FCFA",
     team: "Team Metal-X",
-    description: "Lauréat du premier prix pour la conception et l'implémentation de DAKAR FLOW, une plateforme intelligente de régulation et d'optimisation de la mobilité urbaine pour les Jeux Olympiques de la Jeunesse (JOJ).",
+    description: "Vainqueur du 1er Prix (1 500 000 FCFA) pour la conception et l'implémentation de DAKAR FLOW, plateforme intelligente d'expérience spectateur et de régulation de mobilité urbaine pour les Jeux Olympiques de la Jeunesse.",
     badgeColor: "amber",
-    image: null
+    image: awardJoj
   },
   {
     id: 2,
@@ -18,10 +21,10 @@ export const awards = [
     rankEn: "1st Prize",
     title: "Africa T-Awards 2026",
     category: "Security & Privacy by Design",
-    project: "CareLink / SecureIDChain",
+    project: "Fadju Gaww (CareLink / SecureIDChain)",
     period: "2026",
     team: "Team Metal-X",
-    description: "Premier prix continental récompensant l'excellence en sécurité et protection des données sensibles (Privacy by Design) appliquée à l'identité numérique décentralisée et la santé connectée.",
+    description: "Premier prix continental récompensant l'excellence en sécurité et protection des données sensibles (Privacy by Design) appliquée à l'écosystème e-santé et identité décentralisée avec Fadju Gaww.",
     badgeColor: "amber",
     image: null
   },
