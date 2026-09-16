@@ -17,6 +17,7 @@ import senelecCover from "../assets/images/senelec_cover.jpg";
 import dakarflowCover from "../assets/images/dakarflow_cover.jpg";
 import fadjugawCover from "../assets/images/fadjugaw_cover.jpg";
 import petrosenCover from "../assets/images/petrosen_pipeline_cover.jpg";
+import gstageCover from "../assets/images/gstage_cover.png";
 
 export const projects = [
     {
@@ -98,6 +99,26 @@ export const projects = [
             { label: "Latence API Globale", value: "540 ms" },
             { label: "Empreinte RAM (CPU)", value: "1.5 Go" },
             { label: "Souveraineté Données", value: "100% Local" }
+        ]
+    },
+    {
+        id: 36,
+        title: "Plateforme Full-Stack de Gestion des Stages & Workflows IA en Production (Sonatel)",
+        subtitle: "Projet de Fin d'Études (Mémoire) – Mouhamadou Lamine NDIAYE",
+        category: "Mémoire / PFE",
+        featured: true,
+        author: "Mouhamadou Lamine NDIAYE",
+        tag: "Projet de Fin d'Études (Sonatel)",
+        description: "Conception et déploiement en production d'une plateforme d'entreprise full-stack de gestion intégrale des stages pour Sonatel (Orange Sénégal), intégrant des services d'Intelligence Artificielle au cœur des flux métiers RH. La solution couvre tout le cycle de vie du stagiaire : soumission et suivi des candidatures, génération automatisée de documents administratifs, signature électronique et préparation des allocations. Elle embarque des services IA hébergés localement, dont un assistant d'orientation candidat basé sur RAG pour la recherche contextuelle d'informations et un agent IA d'automatisation des workflows RH orchestré par LangGraph (LLM, retrieval, tool calling). Développée avec un backend Spring Boot et une interface React moderne selon une architecture modulaire, interconnectée aux SI d'entreprise et déployée sur Red Hat OpenShift avec monitoring opérationnel et pipelines CI/CD.",
+        image: gstageCover,
+        technologies: ["LangGraph (Agents IA)", "LLMs & RAG", "Spring Boot", "React", "Red Hat OpenShift", "CI/CD Pipelines", "APIs d'Entreprise", "Signature Électronique", "PostgreSQL"],
+        demoUrl: null,
+        githubUrl: null,
+        metrics: [
+            { label: "Cycle de gestion", value: "100% Intégré" },
+            { label: "Orchestration IA", value: "LangGraph" },
+            { label: "Déploiement", value: "OpenShift" },
+            { label: "Hébergement IA", value: "100% Local" }
         ]
     },
     {

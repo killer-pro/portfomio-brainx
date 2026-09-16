@@ -26,8 +26,12 @@ function Portfolio() {
     );
   }
 
-  // Find featured projects for Mouhamadou Diouf CISSE (Tontoo, DakarFlow & SENELEC)
-  const flagshipProjects = member.id === 2 ? projects.filter(p => p.id === 1 || p.id === 24 || p.id === 25) : [];
+  // Find featured projects for Mouhamadou Diouf CISSE (Tontoo, DakarFlow & SENELEC) and Mouhamadou Lamine NDIAYE (PFE Sonatel, Fadju Gaww, SENELEC & DakarFlow)
+  const flagshipProjects = member.id === 2 
+    ? projects.filter(p => p.id === 1 || p.id === 24 || p.id === 25) 
+    : member.id === 4 
+    ? projects.filter(p => p.id === 36 || p.id === 23 || p.id === 24 || p.id === 25)
+    : [];
   // Find featured thesis project (e.g. for Abdoulkarim LY)
   const thesisProject = member.thesisProject;
 
@@ -134,16 +138,16 @@ function Portfolio() {
             </div>
           </div>
 
-          {/* Featured Flagship Projects Section for Mouhamadou Diouf CISSE */}
+          {/* Featured Flagship Projects Section */}
           {flagshipProjects.length > 0 && (
             <div className="p-8 sm:p-10 bg-indigo-50/50 border-b border-indigo-100 space-y-8">
               <div>
                 <div className="inline-flex items-center space-x-2 text-indigo-700 text-xs font-black uppercase tracking-wider mb-2">
                   <FaAward className="text-base text-amber-500" />
-                  <span>Projets Phares Réalisés (Sonatel & SENELEC)</span>
+                  <span>Projets Phares & Compétitions d'Envergure</span>
                 </div>
                 <h2 className="text-2xl font-extrabold text-slate-900">
-                  Réalisations Majeures & Direction Technique
+                  Réalisations Majeures & Projets Primés
                 </h2>
               </div>
 
@@ -222,10 +226,10 @@ function Portfolio() {
                   <div className="px-4 py-2.5 bg-slate-100/90 border-b border-slate-200/70 flex items-center justify-between text-xs text-slate-600 font-semibold">
                     <span className="flex items-center space-x-2">
                       <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block animate-pulse" />
-                      <span>Interface & Télémétrie en Temps Réel (Sonatel)</span>
+                      <span>{thesisProject.imageLabel || "Interface & Déploiement en Production (Sonatel)"}</span>
                     </span>
                     <span className="bg-indigo-100 text-indigo-700 px-2.5 py-0.5 rounded-full text-[11px] font-bold">
-                      CamemBERT-large
+                      {thesisProject.badge || thesisProject.technologies?.[0] || "Sonatel / Orange"}
                     </span>
                   </div>
                   <div className="p-2 sm:p-4 bg-slate-950/5 flex justify-center">
@@ -318,6 +322,34 @@ function Portfolio() {
               <div className="space-y-4 text-slate-700 text-sm sm:text-base leading-relaxed">
                 {member.biography.map((paragraph, idx) => (
                   <p key={idx}>{paragraph}</p>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Distinctions & Palmarès Section */}
+          {member.distinctions && (
+            <div className="p-8 sm:p-10 border-b border-slate-100 bg-amber-50/30">
+              <div className="flex items-center space-x-2 text-amber-700 text-xs font-black uppercase tracking-wider mb-2">
+                <FaAward className="text-base text-amber-500" />
+                <span>Palmarès & Récompenses</span>
+              </div>
+              <h2 className="text-2xl font-bold text-slate-900 mb-6">Distinctions & Prix Remportés</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {member.distinctions.map((dist, idx) => (
+                  <div key={idx} className="bg-white p-5 rounded-2xl border border-amber-200/70 shadow-sm hover:shadow-md transition-shadow">
+                    <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                      <span className="text-xs font-black text-amber-800 bg-amber-100 px-3 py-1 rounded-full">
+                        {dist.title}
+                      </span>
+                      {dist.project && (
+                        <span className="text-xs font-semibold text-slate-500">
+                          {dist.project}
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-sm text-slate-600 leading-relaxed">{dist.description}</p>
+                  </div>
                 ))}
               </div>
             </div>

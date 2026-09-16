@@ -3,6 +3,7 @@ import mouha from "../assets/images/mouha.jpg";
 import lamine from "../assets/images/lamine.jpg";
 import abdoulkarim from "../assets/images/abdoulkarim.jpg";
 import routageCourrier from "../assets/images/routage_courrier.png";
+import gstageCover from "../assets/images/gstage_cover.png";
 
 export const teamMembers = [
     {
@@ -88,6 +89,33 @@ export const teamMembers = [
                 org: "Défilé National du 4 Avril",
                 period: "Avril 2025",
                 description: "Défilé au sein de la délégation officielle de l'EPT, lauréate du 1er Prix civil national."
+            }
+        ],
+        distinctions: [
+            {
+                title: "1er Prix Hackathon JOJ 2026",
+                project: "DAKAR FLOW",
+                description: "Plateforme intelligente d'expérience spectateur et de régulation de mobilité urbaine pour les Jeux Olympiques de la Jeunesse Dakar 2026."
+            },
+            {
+                title: "1er Prix Africa T-Awards 2026",
+                project: "Fadju Gaww (CareLink / SecureIDChain)",
+                description: "Trophée continental récompensant l'excellence technologique, la cybersécurité et l'écosystème e-santé de nouvelle génération."
+            },
+            {
+                title: "1er Prix Hackathon SENELEC 2025",
+                project: "Écosystème Industriel Unifié & SENIA",
+                description: "Plateforme d'écoute client intelligente et gestion opérationnelle H24 unifiant 4 applications et l'IA SENIA."
+            },
+            {
+                title: "1er Prix SALTIS 2026",
+                project: "Excellence Numérique & Solutions Distribuées",
+                description: "Grand vainqueur de la compétition nationale d'innovation numérique face aux projets les plus compétitifs du pays."
+            },
+            {
+                title: "3e Prix SALTIS 2024",
+                project: "Innovation Technologique",
+                description: "Distinction nationale récompensant des architectures logicielles distribuées innovantes."
             }
         ]
     },
@@ -329,42 +357,128 @@ export const teamMembers = [
     {
         id: 4,
         name: "Mouhamadou Lamine NDIAYE",
-        role: "Ingénieur Diplômé en Informatique et Télécommunications",
+        role: "Ingénieur de Conception en Génie Informatique et Télécommunications | Software & AI Engineer",
         image: lamine,
         email: "nidayeml@ept.sn",
+        location: "Dakar, Sénégal",
         linkedin: "https://www.linkedin.com/in/mouhamadou-lamine-ndiaye",
         github: "https://github.com/mlndiaye",
-        bio: "Ingénieur diplômé de l'EPT passionné par la cybersécurité offensive/défensive, le développement Cloud natif et les systèmes embarqués.",
+        bio: "Ingénieur de Conception en Génie Informatique et Télécommunications diplômé de l'EPT (Promotion 2026), Software & AI Engineer au sein de Team Metal-X. Expérience d'envergure chez Sonatel / Orange Sénégal (thèse PFE sur la plateforme de gestion des stages avec workflows IA LangGraph et déploiement OpenShift). Tout comme Mouhamadou Diouf Cissé, il a remporté l'ensemble des grands concours d'innovation technologique : lauréat de 5 hackathons majeurs (1er Prix Africa T-Awards 2026, 1er Prix JOJ Dakar 2026, 1er Prix Hackathon SENELEC, SALTIS x2).",
+        thesisProject: {
+            title: "Plateforme Full-Stack de Gestion des Stages & Workflows IA en Production (Sonatel)",
+            subtitle: "Projet de Fin d'Études (Mémoire d'Ingénieur) – Mouhamadou Lamine NDIAYE",
+            tag: "Projet de Fin d'Études (Sonatel / Orange)",
+            description: "Conception et déploiement en environnement de production d'une plateforme d'entreprise full-stack de gestion intégrale des stages pour Sonatel (Orange Sénégal), intégrant des services d'Intelligence Artificielle au cœur des flux métiers RH. La solution couvre tout le cycle de vie du stagiaire : soumission et suivi des candidatures, génération automatisée de documents administratifs, signature électronique et préparation des allocations. Elle embarque des services IA hébergés localement, dont un assistant d'orientation candidat basé sur RAG pour la recherche contextuelle d'informations et un agent IA d'automatisation des workflows RH orchestré par LangGraph (LLM, retrieval, tool calling). Développée avec un backend Spring Boot et une interface React moderne selon une architecture modulaire, interconnectée aux SI d'entreprise et déployée sur Red Hat OpenShift avec monitoring opérationnel et pipelines CI/CD.",
+            image: gstageCover,
+            badge: "LangGraph & OpenShift",
+            imageLabel: "Plateforme d'Entreprise & Workflows IA (Sonatel)",
+            technologies: [
+                "LangGraph (Workflows & Agents IA)",
+                "LLMs & RAG Contextuel",
+                "Spring Boot",
+                "React",
+                "Red Hat OpenShift",
+                "CI/CD Pipelines",
+                "APIs SI d'Entreprise",
+                "Signature Électronique",
+                "Supervision & Monitoring"
+            ],
+            metrics: [
+                { label: "Cycle de vie RH", value: "100% Intégré" },
+                { label: "Orchestration IA", value: "LangGraph" },
+                { label: "Déploiement", value: "OpenShift" },
+                { label: "Hébergement IA", value: "100% Local" }
+            ]
+        },
         biography: [
-            "Diplômé de l'École Polytechnique de Thiès en Informatique et Télécommunications, j'ai bâti mon profil autour d'une double expertise : la sécurité des systèmes d'information et le développement web/cloud distribué.",
-            "Convaincu que la sécurité doit être intégrée dès la première ligne de code (DevSecOps), je conçois des solutions logicielles conformes aux normes les plus rigoureuses, alliant haute performance applicative et résilience cryptographique.",
-            "Mes travaux m'ont également amené à concevoir des architectures hybrides mêlant systèmes embarqués IoT (ESP32, capteurs industriels) et backends réactifs hautement sollicités.",
-            "Mon passage à la Sonatel au sein de la DSI/SPA m'a permis de piloter des projets d'envergure, de sécuriser des points d'entrée applicatifs critiques et d'orchestrer des stacks microservices en production."
+            "Ingénieur de Conception diplômé en Génie Informatique et Télécommunications de la prestigieuse École Polytechnique de Thiès (EPT), j'allie la rigueur scientifique polytechnicienne à une forte passion pour le génie logiciel moderne et l'intelligence artificielle appliquée en tant que Software & AI Engineer au sein de Team Metal-X.",
+            "Dans le cadre de mon Projet de Fin d'Études chez Sonatel (Orange Sénégal), j'ai conçu et déployé en production une plateforme d'entreprise full-stack de gestion des stages intégrant des services d'IA de pointe. La solution couvre tout le cycle de vie RH (candidatures, génération documentaire, signature électronique, gestion des allocations) et intègre des workflows d'IA agentique orchestrés par LangGraph (assistant RAG, tool calling, automatisation de processus métiers). Bâtie sur Spring Boot et React, interfacée aux SI d'entreprise et déployée sous Red Hat OpenShift avec CI/CD et télémétrie continue, elle démontre ma capacité à industrialiser des solutions logicielles et IA critiques en production.",
+            "Tout comme Mouhamadou Diouf Cissé et au sein du collectif d'élite Team Metal-X, j'ai remporté l'ensemble des compétitions et hackathons majeurs d'innovation technologique : 1er Prix Hackathon JOJ Dakar 2026 (DAKAR FLOW), 1er Prix Africa T-Awards 2026 (Fadju Gaww / SecureIDChain / CareLink), 1er Prix Hackathon National SENELEC 2025 (Écosystème Industriel Unifié & SENIA), 1er Prix SALTIS 2026 et 3e Prix SALTIS 2024.",
+            "Fort d'une solide expérience au sein de la Sonatel (DSI / SPA et PFE), je maîtrise l'ensemble du cycle de vie logiciel, de la modélisation à l'orchestration microservices et au monitoring opérationnel en environnement cloud et haute disponibilité."
         ],
         skills: [
-            "Cybersécurité & DevSecOps",
-            "Développement Web (Spring Boot, Angular, React)",
-            "DevOps (Docker, Kubernetes, CI/CD)",
-            "Cloud Computing (AWS, GCP)",
-            "Bases de données (PostgreSQL, MongoDB)",
-            "Systèmes Embarqués (ESP32, IoT)",
-            "IA & Machine Learning"
+            "Génie Logiciel & Architecture Système",
+            "Intelligence Artificielle & LLMs",
+            "Full-Stack (Spring Boot, React, Angular)",
+            "Python & FastAPI",
+            "DevOps & Cloud (Docker, Kubernetes, CI/CD)",
+            "Architectures Distribuées & Microservices",
+            "Bases de Données (PostgreSQL, MongoDB)",
+            "IA Générative & RAG",
+            "API Design & Intégration",
+            "Systèmes Temps Réel & WebSockets"
+        ],
+        skillCategories: [
+            {
+                title: "Génie Logiciel & Backend",
+                skills: ["Java (Spring Boot)", "Python (FastAPI, Django)", "Architecture Microservices", "API REST", "Design Patterns", "Clean Architecture"]
+            },
+            {
+                title: "Intelligence Artificielle & IA Générative",
+                skills: ["LLMs & Prompt Engineering", "RAG & Vector Search", "Agents IA", "Machine Learning", "NLP", "PyTorch"]
+            },
+            {
+                title: "Frontend & Mobile",
+                skills: ["React.js", "Angular", "TypeScript", "Tailwind CSS", "React Native", "Next.js"]
+            },
+            {
+                title: "Cloud, DevOps & Données",
+                skills: ["Docker", "Kubernetes", "CI/CD (GitLab, GitHub Actions)", "PostgreSQL", "MongoDB", "AWS / GCP", "Redis"]
+            }
+        ],
+        distinctions: [
+            {
+                title: "1er Prix Hackathon JOJ 2026",
+                project: "DAKAR FLOW",
+                description: "Plateforme intelligente d'expérience spectateur et de mobilité urbaine pour les Jeux Olympiques de la Jeunesse Dakar 2026."
+            },
+            {
+                title: "1er Prix Africa T-Awards 2026",
+                project: "Fadju Gaww (CareLink / SecureIDChain)",
+                description: "Trophée continental récompensant l'innovation technologique et l'écosystème e-santé souverain de nouvelle génération."
+            },
+            {
+                title: "1er Prix Hackathon SENELEC 2025",
+                project: "Écosystème Industriel Unifié & SENIA",
+                description: "Plateforme d'écoute client intelligente et supervision opérationnelle H24 unifiant 4 applications et l'IA SENIA."
+            },
+            {
+                title: "1er Prix SALTIS 2026",
+                project: "Excellence Numérique & Solutions Distribuées",
+                description: "Grand vainqueur de la compétition nationale d'innovation numérique face aux projets d'ingénierie les plus compétitifs."
+            },
+            {
+                title: "3e Prix SALTIS 2024",
+                project: "Innovation Technologique",
+                description: "Reconnaissance nationale pour la résilience et l'ingénierie de solutions distribuées novatrices."
+            }
         ],
         experience: [
             {
-                role: "Ingénieur Stagiaire Full Stack & Sécurité",
+                role: "Software & AI Engineer — Plateforme Intelligente de Gestion des Stages (PFE)",
+                company: "Sonatel (Orange Sénégal)",
+                period: "Déc. 2025 – Juin 2026 (7 mois)",
+                description: "Projet de Fin d'Études : Conception et déploiement d'une plateforme d'entreprise full-stack de gestion des stages avec intégration de services IA en production. Développement backend Spring Boot et frontend React selon une architecture modulaire. Intégration de services IA hébergés localement (assistant RAG d'orientation candidat et agent d'automatisation des workflows RH sous LangGraph avec tool calling et orchestration). Interconnexion aux SI d'entreprise via APIs et déploiement sous Red Hat OpenShift avec pipelines CI/CD et monitoring opérationnel."
+            },
+            {
+                role: "Ingénieur Logiciel Full Stack & Solutions IA",
                 company: "Sonatel (DSI / SPA)",
-                period: "Août 2024 - Décembre 2024",
-                description: "Conception et mise en œuvre de solutions web bancaires et sécurisées sous Spring Boot et Angular, avec durcissement de la couche sécurité."
+                period: "Août 2024 – Décembre 2024 (5 mois)",
+                description: "Conception, développement et déploiement de solutions logicielles d'entreprise sous architectures microservices (Spring Boot, Angular, React). Intégration de briques applicatives performantes, optimisation des flux de données et mise en place de pipelines CI/CD."
             }
         ],
         education: [
             {
-                degree: "Diplôme d'Ingénieur de Conception (DIC) en Informatique et Télécommunications",
+                degree: "Diplôme d'Ingénieur de Conception (DIC) en Génie Informatique et Télécommunications",
                 school: "École Polytechnique de Thiès (EPT)",
                 period: "2021 - 2026",
-                description: "Formation polytechnicienne d'excellence avec spécialisation en cybersécurité, systèmes distribués et développement logiciel."
+                description: "Formation polytechnicienne d'élite axée sur le génie logiciel avancé, l'intelligence artificielle, les systèmes distribués, le cloud computing et les télécommunications. Thèse / Projet de Fin d'Études soutenu chez Sonatel (Orange Sénégal) sur une plateforme de gestion des stages avec intégration d'IA agentique (LangGraph) et OpenShift."
             }
+        ],
+        languages: [
+            { lang: "Français", level: "Bilingue / Courant" },
+            { lang: "Anglais", level: "Technique / Professionnel" },
+            { lang: "Wolof", level: "Langue maternelle" }
         ]
     }
 ];
